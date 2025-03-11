@@ -1,0 +1,1661 @@
+<?xml version='1.0'?>
+<testExecutions version='1'>
+    <file path='src/app/framework/state.spec.ts'>
+        <testCase name='State should update state with new value' duration='7'/>
+        <testCase name='State should reset state with new value' duration='1'/>
+        <testCase name='State should not update state if nothing changed' duration='0'/>
+        <testCase name='State should not reset state if nothing changed' duration='1'/>
+    </file>
+    <file path='src/app/framework/angular/pager.component.spec.ts'>
+        <testCase name='Pager should init with last partly page' duration='1'/>
+        <testCase name='Pager should init with middle page' duration='1'/>
+        <testCase name='Pager should init with last partly page 2' duration='0'/>
+        <testCase name='Pager should init with last full page' duration='2'/>
+        <testCase name='Pager should emit if going next' duration='2'/>
+        <testCase name='Pager should emit if changing size' duration='0'/>
+        <testCase name='Pager should init without total and full page size' duration='0'/>
+        <testCase name='Pager should init without total and partial page size' duration='1'/>
+        <testCase name='Pager should emit if going prev' duration='0'/>
+        <testCase name='Pager should init with first full page' duration='0'/>
+        <testCase name='Pager should init with default values' duration='0'/>
+    </file>
+    <file path='src/app/framework/angular/shortcut.component.spec.ts'>
+        <testCase name='ShortcutComponent should raise event if triggered' duration='1'/>
+        <testCase name='ShortcutComponent should destroy without keys' duration='1'/>
+        <testCase name='ShortcutComponent should init without keys' duration='0'/>
+        <testCase name='ShortcutComponent should not raise event if triggered but destroyed' duration='1'/>
+        <testCase name='ShortcutComponent should not raise event if triggered but disabled' duration='0'/>
+    </file>
+    <file path='src/app/framework/angular/forms/templated-form-group.spec.ts'>
+        <testCase name='TemplatedFormGroup Should call template to clear items with for setValue' duration='2'/>
+        <testCase name='TemplatedFormGroup Should call template to construct controls for setValue' duration='1'/>
+        <testCase name='TemplatedFormGroup Should call template to construct controls for patchValue' duration='1'/>
+        <testCase name='TemplatedFormGroup Should call template to construct controls for reset' duration='1'/>
+        <testCase name='TemplatedFormGroup Should call template to clear items with for patchValue' duration='0'/>
+        <testCase name='TemplatedFormGroup Should call template to clear items with for reset' duration='0'/>
+    </file>
+    <file path='src/app/framework/angular/markdown.directive.spec.ts'>
+        <testCase name='MarkdownDirective should render HTML escaped' duration='14'/>
+        <testCase name='MarkdownDirective should render if optional with exclamation' duration='8'/>
+        <testCase name='MarkdownDirective should render with exclamation if not optional' duration='2'/>
+        <testCase name='MarkdownDirective should render as inline HTML if it has tags' duration='1'/>
+        <testCase name='MarkdownDirective should render as HTML if it has encoded characters' duration='2'/>
+        <testCase name='MarkdownDirective should render as HTML if it has tags' duration='1'/>
+        <testCase name='MarkdownDirective should render empty text as text' duration='1'/>
+        <testCase name='MarkdownDirective should render as text if result has no tags' duration='1'/>
+        <testCase name='MarkdownDirective should render as text if optional' duration='1'/>
+    </file>
+    <file path='src/app/shared/state/queries.spec.ts'>
+        <testCase name='Queries should provide key' duration='14'/>
+        <testCase name='Queries should forward add user call to state' duration='2'/>
+        <testCase name='Queries should forward add shared call to state' duration='1'/>
+        <testCase name='Queries should load merged queries' duration='1'/>
+        <testCase name='Queries should forward remove shared call to state' duration='1'/>
+        <testCase name='Queries should load user queries' duration='1'/>
+        <testCase name='Queries should load shared queries' duration='1'/>
+        <testCase name='Queries should forward remove user call to state' duration='2'/>
+    </file>
+    <file path='src/app/framework/angular/forms/validators.spec.ts'>
+        <testCase name='ValidatorsEx validArrayValues should return null validator if values not defined' duration='0'/>
+        <testCase name='ValidatorsEx validArrayValues should return error if value is not in allowed values' duration='0'/>
+        <testCase name='ValidatorsEx validArrayValues should return null if value is in allowed values' duration='1'/>
+        <testCase name='ValidatorsEx validValues should return error if value is not in allowed values' duration='1'/>
+        <testCase name='ValidatorsEx validValues should return null validator if values not defined' duration='0'/>
+        <testCase name='ValidatorsEx validValues should return null if value is in allowed values' duration='0'/>
+        <testCase name='ValidatorsEx pattern should return null if value is null string' duration='1'/>
+        <testCase name='ValidatorsEx pattern should return error without message if value does not match pattern' duration='1'/>
+        <testCase name='ValidatorsEx pattern should return error with message if value does not match pattern' duration='0'/>
+        <testCase name='ValidatorsEx pattern should return error without message if value does not match pattern string' duration='0'/>
+        <testCase name='ValidatorsEx pattern should return null validator if pattern not defined' duration='1'/>
+        <testCase name='ValidatorsEx pattern should return null if value is empty string' duration='0'/>
+        <testCase name='ValidatorsEx pattern should return null if value is valid pattern' duration='1'/>
+        <testCase name='ValidatorsEx validDateTime should return error if value is invalid date' duration='1'/>
+        <testCase name='ValidatorsEx validDateTime should return null validator if valid is not defined' duration='0'/>
+        <testCase name='ValidatorsEx validDateTime should return null if date time is valid' duration='0'/>
+        <testCase name='ValidatorsEx betweenLength should return error if not in range' duration='0'/>
+        <testCase name='ValidatorsEx betweenLength should return null validator if no min value or max value' duration='0'/>
+        <testCase name='ValidatorsEx betweenLength should return error if less than min' duration='1'/>
+        <testCase name='ValidatorsEx betweenLength should return error if greater than max' duration='0'/>
+        <testCase name='ValidatorsEx betweenLength should return null if value is equal to min and max' duration='0'/>
+        <testCase name='ValidatorsEx betweenLength should return null if value is null' duration='0'/>
+        <testCase name='ValidatorsEx betweenLength should return error if not equal to min and max' duration='0'/>
+        <testCase name='ValidatorsEx betweenLength should return null if value is undefined' duration='0'/>
+        <testCase name='ValidatorsEx betweenLength should return null if value is valid' duration='0'/>
+        <testCase name='ValidatorsEx match should throw error if other object is not found' duration='1'/>
+        <testCase name='ValidatorsEx match should return empty object if values are the same' duration='0'/>
+        <testCase name='ValidatorsEx match should return empty object if control has no parent' duration='1'/>
+        <testCase name='ValidatorsEx match should return error if not the same value' duration='0'/>
+        <testCase name='ValidatorsEx match should revalidate if other control changes' duration='1'/>
+        <testCase name='ValidatorsEx uniqueObjectValues should return null if values array has one item' duration='1'/>
+        <testCase name='ValidatorsEx uniqueObjectValues should return null if values array has unchecked duplicate' duration='1'/>
+        <testCase name='ValidatorsEx uniqueObjectValues should return null if values array has no duplicate' duration='0'/>
+        <testCase name='ValidatorsEx uniqueObjectValues should return null if value is null' duration='0'/>
+        <testCase name='ValidatorsEx uniqueObjectValues should return error if values array has duplicate' duration='0'/>
+        <testCase name='ValidatorsEx uniqueObjectValues should return null if value is not an object array' duration='1'/>
+        <testCase name='ValidatorsEx uniqueObjectValues should return error if values array has multiple duplicates' duration='0'/>
+        <testCase name='ValidatorsEx between should return null if value is null' duration='1'/>
+        <testCase name='ValidatorsEx between should return error if less than min' duration='1'/>
+        <testCase name='ValidatorsEx between should return null if value is equal to min and max' duration='0'/>
+        <testCase name='ValidatorsEx between should return null if value is undefined' duration='1'/>
+        <testCase name='ValidatorsEx between should return error if greater than max' duration='0'/>
+        <testCase name='ValidatorsEx between should return null if value is valid' duration='0'/>
+        <testCase name='ValidatorsEx between should return null validator if no min value or max value' duration='0'/>
+        <testCase name='ValidatorsEx between should return error if not equal to min and max' duration='0'/>
+        <testCase name='ValidatorsEx between should return error if not in range' duration='0'/>
+        <testCase name='ValidatorsEx uniqueStrings should return null if value is null' duration='0'/>
+        <testCase name='ValidatorsEx uniqueStrings should return null if value is not a string array' duration='0'/>
+        <testCase name='ValidatorsEx uniqueStrings should return null if values are unique' duration='0'/>
+        <testCase name='ValidatorsEx uniqueStrings should return error if values are not unique' duration='0'/>
+    </file>
+    <file path='src/app/features/teams/state/team-contributors.state.spec.ts'>
+        <testCase name='TeamContributorsState Updates should return original error if not a 404' duration='5'/>
+        <testCase name='TeamContributorsState Updates should update contributors if contribution revoked' duration='2'/>
+        <testCase name='TeamContributorsState Updates should update contributors if user assigned' duration='2'/>
+        <testCase name='TeamContributorsState Updates should return proper error if user to add does not exist' duration='2'/>
+        <testCase name='TeamContributorsState Loading should show with new pagination if paging' duration='1'/>
+        <testCase name='TeamContributorsState Loading should only show current page of contributors' duration='2'/>
+        <testCase name='TeamContributorsState Loading should not load if already loaded' duration='1'/>
+        <testCase name='TeamContributorsState Loading should reset loading state if loading failed' duration='1'/>
+        <testCase name='TeamContributorsState Loading should show filtered contributors if searching' duration='1'/>
+        <testCase name='TeamContributorsState Loading should load contributors' duration='1'/>
+        <testCase name='TeamContributorsState Loading should show notification on load if reload is true' duration='1'/>
+    </file>
+    <file path='src/app/framework/angular/forms/extended-form-array.spec.ts'>
+        <testCase name='UndefinableFormArray should reset value as &lt;defined (on)>' duration='1'/>
+        <testCase name='UndefinableFormArray should reset value as &lt;defined (off)>' duration='0'/>
+        <testCase name='UndefinableFormArray should set value as &lt;defined (on)>' duration='0'/>
+        <testCase name='UndefinableFormArray should initialize with empty array' duration='0'/>
+        <testCase name='UndefinableFormArray should patch value as &lt;defined (off)>' duration='1'/>
+        <testCase name='UndefinableFormArray should provide value even if controls are disabled' duration='1'/>
+        <testCase name='UndefinableFormArray should reset value as &lt;undefined (on)>' duration='0'/>
+        <testCase name='UndefinableFormArray should set value as &lt;defined (off)>' duration='1'/>
+        <testCase name='UndefinableFormArray should reset value back after push' duration='1'/>
+        <testCase name='UndefinableFormArray should reset value back after insert' duration='0'/>
+        <testCase name='UndefinableFormArray should set value as &lt;undefined (on)>' duration='0'/>
+        <testCase name='UndefinableFormArray should patch value as &lt;undefined (on)>' duration='1'/>
+        <testCase name='UndefinableFormArray should initialize with undefined' duration='1'/>
+        <testCase name='UndefinableFormArray should patch value as &lt;defined (on)>' duration='1'/>
+        <testCase name='ExtendedFormArray should provide value even if controls are disabled' duration='0'/>
+    </file>
+    <file path='src/app/shared/utils/editor-utils.spec.ts'>
+        <testCase name='EditorUtils should interpolate editor url from second duplicate' duration='1'/>
+        <testCase name='EditorUtils should return empty string if url is null' duration='0'/>
+        <testCase name='EditorUtils should not interpolate if url is not found' duration='0'/>
+        <testCase name='EditorUtils should return empty string if url is ' duration='1'/>
+        <testCase name='EditorUtils should interpolate editor url without dollar' duration='0'/>
+        <testCase name='EditorUtils should interpolate editor url' duration='1'/>
+        <testCase name='EditorUtils should return empty string if url is undefined' duration='0'/>
+        <testCase name='EditorUtils should not interpolate if setting ist not defined' duration='4'/>
+    </file>
+    <file path='src/app/shared/state/table-settings.spec.ts'>
+        <testCase name='TableSettings should provide default fields if reset' duration='2'/>
+        <testCase name='TableSettings should update config if wrapping is toggled' duration='1'/>
+        <testCase name='TableSettings should update config if wrapping is toggled and only updated' duration='1'/>
+        <testCase name='TableSettings should update config if fields are saved' duration='1'/>
+        <testCase name='TableSettings should provide default fields if config is broken' duration='1'/>
+        <testCase name='TableSettings should eliminate invalid fields from the config' duration='0'/>
+        <testCase name='TableSettings should update config if fields are only updated' duration='1'/>
+        <testCase name='TableSettings should provide default fields if config is blank' duration='1'/>
+        <testCase name='TableSettings should remove ui state if config is broken' duration='1'/>
+        <testCase name='TableSettings should remove ui state if config is blank' duration='1'/>
+        <testCase name='TableSettings should remove config if fields are saved' duration='1'/>
+        <testCase name='TableSettings should update config if sizes are saved' duration='2'/>
+        <testCase name='TableSettings should update config if sizes are only updated' duration='1'/>
+    </file>
+    <file path='src/app/framework/angular/pipes/date-time.pipes.spec.ts'>
+        <testCase name='ShortTimePipe should use fallback for non value' duration='1'/>
+        <testCase name='ShortTimePipe should use fallback for non value' duration='0'/>
+        <testCase name='FromNowPipe should use fallback for non value' duration='1'/>
+        <testCase name='FromNowPipe should use fallback for non value' duration='0'/>
+        <testCase name='FromNowPipe should format to from now string from String' duration='1'/>
+        <testCase name='FromNowPipe should format to from now string from DateTime' duration='1'/>
+        <testCase name='ISODatePipe should use fallback for non value' duration='0'/>
+        <testCase name='ISODatePipe should use fallback for non value' duration='0'/>
+        <testCase name='DurationPipe should format to standard duration string' duration='0'/>
+        <testCase name='DurationPipe should use fallback for non value' duration='0'/>
+        <testCase name='DurationPipe should use fallback for non value' duration='0'/>
+        <testCase name='DayOfWeekPipe should format to short week of day string from String' duration='1'/>
+        <testCase name='DayOfWeekPipe should format to short week of day string from DateTime' duration='0'/>
+        <testCase name='DayOfWeekPipe should use fallback for non value' duration='0'/>
+        <testCase name='DayOfWeekPipe should use fallback for non value' duration='0'/>
+        <testCase name='ShortDatePipe should format to two digit day number and short month name from String' duration='0'/>
+        <testCase name='ShortDatePipe should use fallback for non value' duration='0'/>
+        <testCase name='ShortDatePipe should use fallback for non value' duration='1'/>
+        <testCase name='ShortDatePipe should format to two digit day number and short month name from DateTime' duration='0'/>
+        <testCase name='MonthPipe should use fallback for non value' duration='1'/>
+        <testCase name='MonthPipe should use fallback for non value' duration='0'/>
+        <testCase name='MonthPipe should format to long month name from DateTime' duration='1'/>
+        <testCase name='MonthPipe should format to long month name from String' duration='0'/>
+        <testCase name='DayPipe should use fallback for non value' duration='0'/>
+        <testCase name='DayPipe should format to day numbers from DateTime' duration='1'/>
+        <testCase name='DayPipe should format to day numbers from String' duration='0'/>
+        <testCase name='DayPipe should use fallback for non value' duration='0'/>
+        <testCase name='DatePipe should use fallback for non value' duration='0'/>
+        <testCase name='DatePipe should use fallback for non value' duration='0'/>
+        <testCase name='DatePipe should format to two digit day number and short month name and year from String' duration='0'/>
+        <testCase name='DatePipe should format to two digit day number and short month name and year from DateTime' duration='0'/>
+        <testCase name='FullDateTimePipe should format to nice string from String' duration='1'/>
+        <testCase name='FullDateTimePipe should format to nice string from DateTime' duration='0'/>
+        <testCase name='FullDateTimePipe should use fallback for non value' duration='1'/>
+        <testCase name='FullDateTimePipe should use fallback for non value' duration='0'/>
+    </file>
+    <file path='src/app/shared/state/resolvers.spec.ts'>
+        <testCase name='ResolveContents should resolve content from one request after delay' duration='117'/>
+        <testCase name='ResolveContents should resolve content if not found' duration='116'/>
+        <testCase name='ResolveContents should cache all contents for parallel requests' duration='4'/>
+        <testCase name='ResolveContents should cache all contents' duration='4'/>
+        <testCase name='ResolveContents should resolve all contents' duration='3'/>
+        <testCase name='ResolveContents should batch results' duration='103'/>
+        <testCase name='ResolveContents should resolve errors' duration='116'/>
+        <testCase name='ResolveContents should cache results' duration='111'/>
+        <testCase name='ResolveContents should cache results for parallel requests' duration='106'/>
+        <testCase name='ResolveContents should not resolve contents immediately' duration='3'/>
+    </file>
+    <file path='src/app/framework/angular/forms/templated-form-array.spec.ts'>
+        <testCase name='TemplatedFormArray Should call template to clear items with empty array for setValue' duration='2'/>
+        <testCase name='TemplatedFormArray Should call template to remove items for reset' duration='2'/>
+        <testCase name='TemplatedFormArray Should call template to construct items for patchValue' duration='1'/>
+        <testCase name='TemplatedFormArray Should call template to construct items for reset' duration='1'/>
+        <testCase name='TemplatedFormArray should call template when item removed' duration='1'/>
+        <testCase name='TemplatedFormArray should not call template when clearing empty form' duration='0'/>
+        <testCase name='TemplatedFormArray Should call template to clear items with empty array for reset' duration='0'/>
+        <testCase name='TemplatedFormArray should not call template when item to remove out of bounds' duration='1'/>
+        <testCase name='TemplatedFormArray Should call template to remove items for patchValue' duration='1'/>
+        <testCase name='TemplatedFormArray Should call template to construct items for setValue' duration='0'/>
+        <testCase name='TemplatedFormArray Should call template to clear items with undefined for patchValue' duration='1'/>
+        <testCase name='TemplatedFormArray should propagate value only once when multiple items are added' duration='0'/>
+        <testCase name='TemplatedFormArray Should call template to clear items with undefined for reset' duration='0'/>
+        <testCase name='TemplatedFormArray Should call template to clear items with empty array for patchValue' duration='1'/>
+        <testCase name='TemplatedFormArray should call template when cleared' duration='1'/>
+        <testCase name='TemplatedFormArray should add control' duration='0'/>
+        <testCase name='TemplatedFormArray Should call template to remove items for setValue' duration='0'/>
+        <testCase name='TemplatedFormArray should propagate value only once when multiple items are removed' duration='0'/>
+        <testCase name='TemplatedFormArray Should call template to clear items with undefined for setValue' duration='0'/>
+    </file>
+    <file path='src/app/shared/state/contents.forms.visitors.spec.ts'>
+        <testCase name='StringField should not format to preview image if not unsplash image' duration='1'/>
+        <testCase name='StringField should return default value from properties' duration='0'/>
+        <testCase name='StringField should not format to preview image if html not allowed' duration='0'/>
+        <testCase name='StringField should format to preview image' duration='1'/>
+        <testCase name='StringField should format to empty string if null' duration='0'/>
+        <testCase name='StringField should override default value from localizable properties' duration='0'/>
+        <testCase name='StringField should format to string' duration='0'/>
+        <testCase name='StringField should create validators' duration='0'/>
+        <testCase name='RichTextField should return default value as null' duration='0'/>
+        <testCase name='RichTextField should format to empty string if null' duration='0'/>
+        <testCase name='RichTextField should format to plural count for many items' duration='0'/>
+        <testCase name='RichTextField should create validators' duration='0'/>
+        <testCase name='ComponentsField should return default value as empty array' duration='1'/>
+        <testCase name='ComponentsField should return default value as undefined when configured' duration='1'/>
+        <testCase name='ComponentsField should format to empty string if null' duration='0'/>
+        <testCase name='ComponentsField should format to plural count for many items' duration='1'/>
+        <testCase name='ComponentsField should create validators' duration='0'/>
+        <testCase name='ComponentsField should format to plural count for single item' duration='0'/>
+        <testCase name='ComponentsField should return zero formatting if other type' duration='1'/>
+        <testCase name='NumberField should format to empty string if other type' duration='0'/>
+        <testCase name='NumberField should format to empty string if null' duration='0'/>
+        <testCase name='NumberField should return default value from properties' duration='0'/>
+        <testCase name='NumberField should create validators' duration='0'/>
+        <testCase name='NumberField should format to short star view for negative stars' duration='1'/>
+        <testCase name='NumberField should override default value from localizable properties' duration='0'/>
+        <testCase name='NumberField should format to short star view for many stars' duration='0'/>
+        <testCase name='NumberField should not format to stars if html not allowed' duration='0'/>
+        <testCase name='NumberField should format to number' duration='1'/>
+        <testCase name='NumberField should format to short star view for no stars' duration='0'/>
+        <testCase name='NumberField should format to stars if html allowed' duration='0'/>
+        <testCase name='ReferencesField should format to empty string if null' duration='1'/>
+        <testCase name='ReferencesField should create validators' duration='8'/>
+        <testCase name='ReferencesField should override default value from localizable properties' duration='0'/>
+        <testCase name='ReferencesField should return zero formatting if other type' duration='1'/>
+        <testCase name='ReferencesField should format to text' duration='0'/>
+        <testCase name='ReferencesField should return default value from properties' duration='1'/>
+        <testCase name='ReferencesField should format to plural count for single item' duration='0'/>
+        <testCase name='DateTimeField should create validators' duration='0'/>
+        <testCase name='DateTimeField should override default value from localizable properties' duration='1'/>
+        <testCase name='DateTimeField should return default from properties value' duration='0'/>
+        <testCase name='DateTimeField should format date to date' duration='1'/>
+        <testCase name='DateTimeField should format datetime to date' duration='0'/>
+        <testCase name='DateTimeField should format old format to date' duration='1'/>
+        <testCase name='DateTimeField should return default from Today' duration='0'/>
+        <testCase name='DateTimeField should format to empty string if null' duration='0'/>
+        <testCase name='DateTimeField should return default value from Today' duration='0'/>
+        <testCase name='DateTimeField should format to input if parsing failed' duration='1'/>
+        <testCase name='GeolocationField should return default value as null' duration='0'/>
+        <testCase name='GeolocationField should format to latitude and longitude' duration='0'/>
+        <testCase name='GeolocationField should create validators' duration='0'/>
+        <testCase name='GeolocationField should format to empty string if other type' duration='0'/>
+        <testCase name='GeolocationField should format to empty string if null' duration='1'/>
+        <testCase name='TagsField should format to asset count' duration='1'/>
+        <testCase name='TagsField should create validators' duration='0'/>
+        <testCase name='TagsField should override default value from localizable properties' duration='1'/>
+        <testCase name='TagsField should format to empty string if other type' duration='0'/>
+        <testCase name='TagsField should return default value from properties' duration='0'/>
+        <testCase name='TagsField should format to empty string if null' duration='0'/>
+        <testCase name='BooleanField should return default value from properties' duration='0'/>
+        <testCase name='BooleanField should override default value from localizable properties' duration='0'/>
+        <testCase name='BooleanField should format to No if false' duration='0'/>
+        <testCase name='BooleanField should create validators' duration='0'/>
+        <testCase name='BooleanField should format to empty string if null' duration='0'/>
+        <testCase name='BooleanField should format to Yes if true' duration='0'/>
+        <testCase name='AssetsField should format to empty string if null' duration='0'/>
+        <testCase name='AssetsField should create validators' duration='0'/>
+        <testCase name='AssetsField should override default value from localizable properties' duration='6'/>
+        <testCase name='AssetsField should return default value from properties' duration='0'/>
+        <testCase name='AssetsField should return zero formatting if other type' duration='1'/>
+        <testCase name='AssetsField should format to plural count for single item' duration='0'/>
+        <testCase name='AssetsField should format to plural count for many items' duration='0'/>
+        <testCase name='ComponentField should format to empty string if null' duration='0'/>
+        <testCase name='ComponentField should format to constant when empty' duration='0'/>
+        <testCase name='ComponentField should format to constant when values give' duration='1'/>
+        <testCase name='ComponentField should format to constant when result is empty' duration='0'/>
+        <testCase name='ComponentField should create validators' duration='0'/>
+        <testCase name='ComponentField should return default value as null' duration='1'/>
+        <testCase name='JsonField should format to constant' duration='0'/>
+        <testCase name='JsonField should format to empty string if null' duration='1'/>
+        <testCase name='JsonField should create validators' duration='0'/>
+        <testCase name='JsonField should return default value as null' duration='0'/>
+        <testCase name='ArrayField should return default value as undefined when configured' duration='0'/>
+        <testCase name='ArrayField should return default value as empty array' duration='0'/>
+        <testCase name='ArrayField should return zero formatting if other type' duration='0'/>
+        <testCase name='ArrayField should format to plural count for single item' duration='0'/>
+        <testCase name='ArrayField should format to plural count for many items' duration='1'/>
+        <testCase name='ArrayField should format to empty string if null' duration='0'/>
+        <testCase name='ArrayField should create validators' duration='0'/>
+    </file>
+    <file path='src/app/features/administration/state/event-consumers.state.spec.ts'>
+        <testCase name='EventConsumersState Updates should update event consumer if reset' duration='2'/>
+        <testCase name='EventConsumersState Updates should update event consumer if started' duration='1'/>
+        <testCase name='EventConsumersState Updates should update event consumer if stopped' duration='1'/>
+        <testCase name='EventConsumersState Loading should reset loading state if loading failed' duration='1'/>
+        <testCase name='EventConsumersState Loading should load event consumers' duration='1'/>
+        <testCase name='EventConsumersState Loading should show notification on load if reload is true' duration='1'/>
+        <testCase name='EventConsumersState Loading should show notification on load error if silent is false' duration='1'/>
+    </file>
+    <file path='src/app/framework/utils/tag-values.spec.ts'>
+        <testCase name='TagValue should create with value and search string' duration='1'/>
+        <testCase name='TagValue should get sorted tags if input is array of string' duration='1'/>
+        <testCase name='TagValue should get sorted tags if input is array of tags' duration='0'/>
+        <testCase name='TagValue should get tags as empty array if input is &lt;undefined>' duration='1'/>
+        <testCase name='TagValue should get tags as empty array if input is &lt;>' duration='0'/>
+        <testCase name='TagValue should get tags as empty array if input is &lt;null>' duration='0'/>
+    </file>
+    <file path='src/app/shared/services/query.spec.ts'>
+        <testCase name='QuerySynchronizer should get query as undefined from route' duration='1'/>
+        <testCase name='QuerySynchronizer should parse from state' duration='0'/>
+        <testCase name='QuerySynchronizer should parse from state as undefined if not a query' duration='1'/>
+        <testCase name='QuerySynchronizer should get query full text from route' duration='0'/>
+        <testCase name='QuerySynchronizer should get query from route' duration='0'/>
+        <testCase name='equalsQuery should return true if comparing with empty query' duration='0'/>
+        <testCase name='equalsQuery should return true if comparing without sort' duration='1'/>
+        <testCase name='equalsQuery should return true if comparing without filter' duration='0'/>
+        <testCase name='QueryFullTextSynchronizer should parse from state' duration='0'/>
+        <testCase name='QueryFullTextSynchronizer should parse from state as undefined if not a query' duration='1'/>
+        <testCase name='QueryFullTextSynchronizer should parse from state as undefined if no full text' duration='0'/>
+        <testCase name='QueryFullTextSynchronizer should get query from route' duration='1'/>
+        <testCase name='QueryFullTextSynchronizer should parse from state as undefined if empty full text' duration='0'/>
+        <testCase name='QueryFullTextSynchronizer should get query as undefined from route' duration='0'/>
+    </file>
+    <file path='src/app/framework/angular/forms/forms-helper.spec.ts'>
+        <testCase name='FormHelpers getControlPath should calculate path for nested control' duration='1'/>
+        <testCase name='FormHelpers getControlPath should calculate path for standalone control' duration='1'/>
+        <testCase name='FormHelpers getControlPath should calculate path for deeply nested control' duration='0'/>
+        <testCase name='FormHelpers getControlPath should calculate path for deeply nested array control' duration='1'/>
+        <testCase name='FormHelpers getControlPath should calculate api compatible path for deeply nested array control' duration='0'/>
+        <testCase name='FormHelpers should provide touched changes' duration='0'/>
+        <testCase name='FormHelpers value$ should provide change values' duration='0'/>
+        <testCase name='FormHelpers value$ should also trigger on disable' duration='0'/>
+        <testCase name='FormHelpers should provide value when defined' duration='1'/>
+        <testCase name='FormHelpers should provide value when defined' duration='0'/>
+    </file>
+    <file path='src/app/shared/state/ui.state.spec.ts'>
+        <testCase name='UIState should add value to snapshot if set as app user' duration='2'/>
+        <testCase name='UIState should remove value from snapshot and common settings if removed' duration='2'/>
+        <testCase name='UIState should remove value from snapshot and app user settings if removed' duration='3'/>
+        <testCase name='UIState should load settings' duration='2'/>
+        <testCase name='UIState should add value to snapshot if set as common' duration='2'/>
+        <testCase name='UIState should add value to snapshot if set as app shared' duration='1'/>
+        <testCase name='UIState should remove value from snapshot and app shared settings if removed' duration='1'/>
+    </file>
+    <file path='src/app/framework/angular/pipes/colors.pipes.spec.ts'>
+        <testCase name='StringColorPipe should compute color from string' duration='2'/>
+        <testCase name='LightenPipe should lighten mixed color' duration='1'/>
+        <testCase name='LightenPipe should lighten rgb gray' duration='0'/>
+        <testCase name='LightenPipe should lighten hey gray' duration='1'/>
+        <testCase name='LightenPipe should keep white unchanged' duration='0'/>
+        <testCase name='DarkenPipe should darken rgb gray' duration='0'/>
+        <testCase name='DarkenPipe should darken hey gray' duration='0'/>
+        <testCase name='DarkenPipe should keep black unchanged' duration='0'/>
+        <testCase name='DarkenPipe should darken mixed color' duration='0'/>
+    </file>
+    <file path='src/app/framework/angular/forms/error-validator.spec.ts'>
+        <testCase name='ErrorValidator should return no message if error does not match' duration='1'/>
+        <testCase name='ErrorValidator should return matching error twice if value does not change' duration='1'/>
+        <testCase name='ErrorValidator should return no message if error is null' duration='0'/>
+        <testCase name='ErrorValidator should return matching errors' duration='0'/>
+        <testCase name='ErrorValidator should return deeply matching error' duration='0'/>
+        <testCase name='ErrorValidator should not return matching error again if value has changed to initial' duration='0'/>
+        <testCase name='ErrorValidator should return partial matching error' duration='0'/>
+        <testCase name='ErrorValidator should return matching error' duration='1'/>
+        <testCase name='ErrorValidator should return partial matching index error' duration='1'/>
+        <testCase name='ErrorValidator should not return matching error again if value has changed' duration='0'/>
+    </file>
+    <file path='src/app/shared/guards/unset-app.guard.spec.ts'>
+        <testCase name='UnsetAppGuard should unselect app' duration='2'/>
+    </file>
+    <file path='src/app/shared/services/history.service.spec.ts'>
+        <testCase name='HistoryService should make get request to get history events' duration='11'/>
+        <testCase name='HistoryService should make get request to get history events for a team' duration='2'/>
+        <testCase name='formatHistoryMessage should embed marker ref and escape HTML' duration='1'/>
+        <testCase name='formatHistoryMessage should provide simple message' duration='0'/>
+        <testCase name='formatHistoryMessage should embed user ref with unknown type' duration='0'/>
+        <testCase name='formatHistoryMessage should embed marker' duration='0'/>
+        <testCase name='formatHistoryMessage should embed user ref with client' duration='1'/>
+        <testCase name='formatHistoryMessage should embed user ref with client ending with client' duration='0'/>
+        <testCase name='formatHistoryMessage should embed user ref with subject' duration='1'/>
+        <testCase name='formatHistoryMessage should embed user ref with id' duration='0'/>
+    </file>
+    <file path='src/app/shared/services/apps.service.spec.ts'>
+        <testCase name='AppsService should make put request to update app' duration='3'/>
+        <testCase name='AppsService should make post request to create app' duration='2'/>
+        <testCase name='AppsService should make put request to update asset scripts' duration='4'/>
+        <testCase name='AppsService should make get request to get asset scripts' duration='2'/>
+        <testCase name='AppsService should make delete request to delete app' duration='2'/>
+        <testCase name='AppsService should make get request to get app settings' duration='2'/>
+        <testCase name='AppsService should make delete request to leave app' duration='4'/>
+        <testCase name='AppsService should make put request to update app settings' duration='3'/>
+        <testCase name='AppsService should make delete request to remove app image' duration='2'/>
+        <testCase name='AppsService should return proper error if uploading app image failed with 413' duration='2'/>
+        <testCase name='AppsService should make get request to get team apps' duration='2'/>
+        <testCase name='AppsService should make get request to get app' duration='3'/>
+        <testCase name='AppsService should make post request to upload app image' duration='2'/>
+        <testCase name='AppsService should make put request to transfer app' duration='2'/>
+        <testCase name='AppsService should make get request to get apps' duration='2'/>
+    </file>
+    <file path='src/app/features/administration/services/users.service.spec.ts'>
+        <testCase name='UsersService should make delete request to delete user' duration='2'/>
+        <testCase name='UsersService should make get request to get many users' duration='2'/>
+        <testCase name='UsersService should make get request with query to get many users' duration='1'/>
+        <testCase name='UsersService should make get request to get single user' duration='2'/>
+        <testCase name='UsersService should make post request to create user' duration='2'/>
+        <testCase name='UsersService should make put request to update user' duration='3'/>
+        <testCase name='UsersService should make put request to lock user' duration='2'/>
+        <testCase name='UsersService should make put request to unlock user' duration='2'/>
+        <testCase name='UsersService should make get request to get many users' duration='2'/>
+        <testCase name='UsersService should make get request to get single user' duration='2'/>
+        <testCase name='UsersService should make get request with query to get many users' duration='1'/>
+    </file>
+    <file path='src/app/framework/utils/interpolator.spec.ts'>
+        <testCase name='interpolate should interpolate with object value' duration='0'/>
+        <testCase name='interpolate should resolve dateTime' duration='0'/>
+        <testCase name='interpolate should allow object shortcuts' duration='0'/>
+        <testCase name='interpolate should return undefined if it resolved to array' duration='1'/>
+        <testCase name='interpolate should return undefined if it resolved to object' duration='0'/>
+        <testCase name='interpolate should interpolate with array value' duration='0'/>
+        <testCase name='interpolate should interpolate with multiple object values' duration='0'/>
+        <testCase name='interpolate should return undefined if not found in array' duration='0'/>
+        <testCase name='interpolate should return undefined if not a valid index' duration='0'/>
+        <testCase name='interpolate should interpolate with complex path' duration='0'/>
+        <testCase name='interpolate should keep string untouched if does not contain interpolation' duration='0'/>
+        <testCase name='interpolate should return undefined if not found in object' duration='0'/>
+        <testCase name='interpolate should interpolate without dollar' duration='0'/>
+    </file>
+    <file path='src/app/shared/services/workflows.service.spec.ts'>
+        <testCase name='Workflow should return same workflow if step to make initial is locked' duration='1'/>
+        <testCase name='Workflow should override settings if step already exists' duration='1'/>
+        <testCase name='Workflow should add transitions to workflow' duration='1'/>
+        <testCase name='Workflow should remove transition from workflow' duration='1'/>
+        <testCase name='Workflow should set initial step' duration='1'/>
+        <testCase name='Workflow should add step to workflow' duration='1'/>
+        <testCase name='Workflow should make first non-locked step the initial step if initial removed' duration='0'/>
+        <testCase name='Workflow should remove step' duration='1'/>
+        <testCase name='Workflow should override settings if transition already exists' duration='0'/>
+        <testCase name='Workflow should create empty workflow' duration='0'/>
+        <testCase name='Workflow should return same workflow if transition to update not found by from step' duration='0'/>
+        <testCase name='Workflow should sort steps case invariant' duration='0'/>
+        <testCase name='Workflow should return same workflow if transition to update not found by to step' duration='0'/>
+        <testCase name='Workflow should return same workflow if transition to remove not' duration='0'/>
+        <testCase name='Workflow should unset initial step if initial removed' duration='2'/>
+        <testCase name='Workflow should update schemaIds' duration='1'/>
+        <testCase name='Workflow should return same workflow if step to remove not found' duration='1'/>
+        <testCase name='Workflow should rename step' duration='1'/>
+        <testCase name='Workflow should rename workflow' duration='0'/>
+        <testCase name='Workflow should return same workflow if step to remove is locked' duration='0'/>
+        <testCase name='WorkflowsService should make a delete request to delete a workflow' duration='2'/>
+        <testCase name='WorkflowsService should make a put request to update a workflow' duration='2'/>
+        <testCase name='WorkflowsService should make a post request to create a workflow' duration='2'/>
+        <testCase name='WorkflowsService should make a get request to get app workflows' duration='2'/>
+    </file>
+    <file path='src/app/shared/services/roles.service.spec.ts'>
+        <testCase name='RolesService should make delete request to remove role' duration='4'/>
+        <testCase name='RolesService should make put request to update role' duration='3'/>
+        <testCase name='RolesService should make post request to add role' duration='2'/>
+        <testCase name='RolesService should make get request to get roles' duration='3'/>
+        <testCase name='RolesService should make get request to get all permissions' duration='2'/>
+    </file>
+    <file path='src/app/shared/services/ui.service.spec.ts'>
+        <testCase name='UIService should make put request to set common value' duration='3'/>
+        <testCase name='UIService should make delete request to remove user app value' duration='2'/>
+        <testCase name='UIService should make put request to set shared app value' duration='2'/>
+        <testCase name='UIService should make get request to get shared app settings' duration='2'/>
+        <testCase name='UIService should make delete request to remove shared app value' duration='1'/>
+        <testCase name='UIService should make put request to set user app value' duration='2'/>
+        <testCase name='UIService should make delete request to remove common value' duration='2'/>
+        <testCase name='UIService should return default shared app settings if error occurs' duration='3'/>
+        <testCase name='UIService should make get request to get user app settings' duration='2'/>
+        <testCase name='UIService should return default user app settings if error occurs' duration='1'/>
+        <testCase name='UIService should make get request to get common settings' duration='1'/>
+        <testCase name='UIService should return default common settings if error occurs' duration='3'/>
+    </file>
+    <file path='src/app/framework/angular/routers/router-utils.spec.ts'>
+        <testCase name='RouterUtils should concat all data from snapshot' duration='0'/>
+        <testCase name='RouterUtils should concat all params from snapshot' duration='0'/>
+        <testCase name='RouterUtils should concat all data from route' duration='0'/>
+        <testCase name='RouterUtils should concat all params from route' duration='1'/>
+    </file>
+    <file path='src/app/shared/guards/must-be-authenticated.guard.spec.ts'>
+        <testCase name='MustBeAuthenticatedGuard should return true if authenticated' duration='3'/>
+        <testCase name='MustBeAuthenticatedGuard should login redirect if redirect enabled' duration='3'/>
+        <testCase name='MustBeAuthenticatedGuard should navigate to default page if not authenticated' duration='2'/>
+    </file>
+    <file path='src/app/shared/services/contents.service.spec.ts'>
+        <testCase name='ContentsService should make get request to get referencing with using json query without total' duration='2'/>
+        <testCase name='ContentsService should make post request to get contents using odata filter' duration='2'/>
+        <testCase name='ContentsService should make post request to get contents using json query without total' duration='4'/>
+        <testCase name='ContentsService should make post request to for bulk update' duration='3'/>
+        <testCase name='ContentsService should make put request to update content' duration='2'/>
+        <testCase name='ContentsService should make post request to create draft' duration='2'/>
+        <testCase name='ContentsService should make get request to get raw content' duration='2'/>
+        <testCase name='ContentsService should make delete request to delete draft' duration='2'/>
+        <testCase name='ContentsService should make post request to get contents using json query' duration='2'/>
+        <testCase name='ContentsService should make patch request to update content' duration='2'/>
+        <testCase name='ContentsService should make get request to get references with using json query without total' duration='2'/>
+        <testCase name='ContentsService should make get request to get referencing with using odata filter' duration='4'/>
+        <testCase name='ContentsService should make get request to get references with using odata filter' duration='2'/>
+        <testCase name='ContentsService should make get request to get referencing with using json query' duration='2'/>
+        <testCase name='ContentsService should make get request to get content' duration='3'/>
+        <testCase name='ContentsService should make delete request to cancel content' duration='3'/>
+        <testCase name='ContentsService should make post request to get all contents using odata filter' duration='2'/>
+        <testCase name='ContentsService should make get request to get references with using json query' duration='1'/>
+        <testCase name='ContentsService should make post request to get all contents using json query without total' duration='2'/>
+        <testCase name='ContentsService should make post request to create content' duration='2'/>
+        <testCase name='ContentsService should make get request to get versioned content data' duration='3'/>
+        <testCase name='ContentsService should make get request to get raw content with language' duration='7'/>
+        <testCase name='ContentsService should make post request to get all contents using json query' duration='2'/>
+    </file>
+    <file path='src/app/framework/services/temp.service.spec.ts'>
+        <testCase name='TempService should return value once if something is stored' duration='0'/>
+        <testCase name='TempService should return null if nothing is stored' duration='0'/>
+        <testCase name='TempService should instantiate' duration='0'/>
+    </file>
+    <file path='src/app/shared/state/contents.forms.spec.ts'>
+        <testCase name='GetContentValue should not resolve formatted text as image url if not found' duration='1'/>
+        <testCase name='GetContentValue should resolve value from invariant field as zero' duration='1'/>
+        <testCase name='GetContentValue should resolve formatted text as image url and filename from referenced asset' duration='1'/>
+        <testCase name='GetContentValue should resolve formatted text as image url from referenced asset with merged format' duration='1'/>
+        <testCase name='GetContentValue should resolve formatted text as filename from referenced asset' duration='1'/>
+        <testCase name='GetContentValue should resolve formatted text as image url from referenced asset' duration='1'/>
+        <testCase name='GetContentValue should resolve formatted text from localized-localized reference data' duration='0'/>
+        <testCase name='GetContentValue should resolve formatted text as image url from referenced asset with custom format' duration='0'/>
+        <testCase name='GetContentValue should not resolve formatted text if reference data not found' duration='0'/>
+        <testCase name='GetContentValue should resolve value from localized field' duration='0'/>
+        <testCase name='GetContentValue should not resolve value if field not found' duration='0'/>
+        <testCase name='GetContentValue should resolve formatted text from invariant reference data' duration='0'/>
+        <testCase name='GetContentValue should resolve formatted text from localized-invariant reference data' duration='0'/>
+        <testCase name='GetContentValue should resolve formatted text as filename from referenced asset with fallback format' duration='0'/>
+        <testCase name='GetContentValue should resolve value from invariant field' duration='1'/>
+        <testCase name='ContentForm should return true if new value is not equal to current value' duration='3'/>
+        <testCase name='ContentForm for new content should subscribe to values' duration='1'/>
+        <testCase name='ContentForm for new content should not be an unsaved change if value has changed and saved' duration='2'/>
+        <testCase name='ContentForm for new content should not be an unsaved change if nothing has changed' duration='1'/>
+        <testCase name='ContentForm for new content should be an unsaved change if value has changed but not saved' duration='1'/>
+        <testCase name='ContentForm should return false if new value is same as current value' duration='1'/>
+        <testCase name='ContentForm for editing content should not be an unsaved change if value has changed and saved' duration='1'/>
+        <testCase name='ContentForm for editing content should be an unsaved change if value has been loaded but not saved' duration='1'/>
+        <testCase name='ContentForm for editing content should be an unsaved change if value has changed but not saved' duration='1'/>
+        <testCase name='ContentForm for editing content should not be an unsaved change if nothing has changed' duration='2'/>
+        <testCase name='ContentForm for editing content should not be an unsaved change if value has been loaded but not saved' duration='1'/>
+        <testCase name='ContentForm should resolve partitions should return partition for language' duration='0'/>
+        <testCase name='ContentForm should resolve partitions should return partition for no language' duration='1'/>
+        <testCase name='ContentForm should resolve partitions should return invariant partitions' duration='0'/>
+        <testCase name='ContentForm should resolve partitions should return language partitions' duration='0'/>
+        <testCase name='ContentForm with complex form should reset array item' duration='2'/>
+        <testCase name='ContentForm with complex form should load with array and not enable disabled nested fields' duration='2'/>
+        <testCase name='ContentForm with complex form should sort array item' duration='2'/>
+        <testCase name='ContentForm with complex form should create array with EmptyArray default value' duration='1'/>
+        <testCase name='ContentForm with complex form should create components with Null default value' duration='2'/>
+        <testCase name='ContentForm with complex form should create components with EmptyArray default value' duration='1'/>
+        <testCase name='ContentForm with complex form should not create required validator for optional language' duration='1'/>
+        <testCase name='ContentForm with complex form should require field based on condition' duration='2'/>
+        <testCase name='ContentForm with complex form should not enabled disabled fields' duration='1'/>
+        <testCase name='ContentForm with complex form should require field based on context condition' duration='1'/>
+        <testCase name='ContentForm with complex form should disable nested fields based on condition' duration='1'/>
+        <testCase name='ContentForm with complex form should hide field based on condition' duration='1'/>
+        <testCase name='ContentForm with complex form should hide nested fields based on condition' duration='1'/>
+        <testCase name='ContentForm with complex form should disable field based on condition' duration='2'/>
+        <testCase name='ContentForm with complex form should hide nested localized fields based on condition' duration='2'/>
+        <testCase name='ContentForm with complex form should unset array item' duration='0'/>
+        <testCase name='ContentForm with complex form should hide components fields based on condition' duration='2'/>
+        <testCase name='ContentForm with complex form should not array item if field has no nested fields' duration='0'/>
+        <testCase name='ContentForm with complex form should add component with default values' duration='1'/>
+        <testCase name='ContentForm with complex form should remove array item' duration='1'/>
+        <testCase name='ContentForm with complex form should add components with default values' duration='1'/>
+        <testCase name='ContentForm with complex form should ignore invalid schema ids' duration='2'/>
+        <testCase name='ContentForm with complex form should add array item' duration='3'/>
+        <testCase name='ContentForm with complex form should replace component with new fields' duration='3'/>
+        <testCase name='ContentForm with complex form should create array with Null default value' duration='1'/>
+        <testCase name='TranslationStatus should create contents status' duration='1'/>
+        <testCase name='TranslationStatus should create content status for schema with mixed fields' duration='0'/>
+        <testCase name='TranslationStatus should create content status for schema with localized field' duration='1'/>
+        <testCase name='TranslationStatus should create content status for schema without localized field' duration='0'/>
+        <testCase name='TranslationStatus should create content status for empty schema' duration='0'/>
+        <testCase name='TranslationStatus should create field status' duration='0'/>
+    </file>
+    <file path='src/app/framework/utils/markdown-transform.spec.ts'>
+        <testCase name='MarkdownTransform should extract image' duration='0'/>
+        <testCase name='MarkdownTransform should extract image with name' duration='0'/>
+        <testCase name='MarkdownTransform should transform with lax name' duration='1'/>
+        <testCase name='MarkdownTransform should transform with alt' duration='2'/>
+        <testCase name='MarkdownTransform should extract image with lax name' duration='2'/>
+        <testCase name='MarkdownTransform should extract image with alt' duration='1'/>
+        <testCase name='MarkdownTransform should not extract image if URL is not valid' duration='0'/>
+        <testCase name='MarkdownTransform should not extract image if markdown contains no image' duration='1'/>
+        <testCase name='MarkdownTransform should transform multiple images' duration='1'/>
+        <testCase name='MarkdownTransform should transform image url' duration='1'/>
+        <testCase name='MarkdownTransform should transform with name' duration='1'/>
+    </file>
+    <file path='src/app/framework/angular/pipes/numbers.pipes.spec.ts'>
+        <testCase name='KNumberPipe should calculate correct human string' duration='0'/>
+        <testCase name='FileSizePipe should calculate correct human file size' duration='0'/>
+    </file>
+    <file path='src/app/shared/services/translations.service.spec.ts'>
+        <testCase name='TranslationsService should make post request to translate text' duration='5'/>
+    </file>
+    <file path='src/app/shared/services/autosave.service.spec.ts'>
+        <testCase name='AutoSaveService should save unsaved edited content' duration='1'/>
+        <testCase name='AutoSaveService should get unsaved edited content and remove' duration='1'/>
+        <testCase name='AutoSaveService should not remove content if key is not defined' duration='1'/>
+        <testCase name='AutoSaveService should not get content if key is not defined' duration='1'/>
+        <testCase name='AutoSaveService should not save content if key is not defined' duration='1'/>
+        <testCase name='AutoSaveService should remove unsaved edited content' duration='0'/>
+        <testCase name='AutoSaveService should get unsaved created content and delete' duration='1'/>
+        <testCase name='AutoSaveService should remove unsaved created content' duration='1'/>
+        <testCase name='AutoSaveService should save unsaved created content' duration='0'/>
+        <testCase name='AutoSaveService should not save content if content is not defined' duration='1'/>
+    </file>
+    <file path='src/app/shared/guards/load-apps.guard.spec.ts'>
+        <testCase name='LoadAppsGuard should load apps' duration='4'/>
+        <testCase name='LoadAppsGuard should load apps' duration='3'/>
+    </file>
+    <file path='src/app/framework/angular/forms/confirm-click.directive.spec.ts'>
+        <testCase name='ConfirmClickDirective Should invoke action when confirmed' duration='1'/>
+        <testCase name='ConfirmClickDirective Should invoke action when unsubscribed in between' duration='0'/>
+        <testCase name='ConfirmClickDirective Should not invoke action when not confirmed' duration='1'/>
+        <testCase name='ConfirmClickDirective Should invoke action directly when disabled' duration='1'/>
+        <testCase name='ConfirmClickDirective Should invoke action when unsubscribed before' duration='1'/>
+        <testCase name='ConfirmClickDirective Should not confirm when text is empty' duration='0'/>
+        <testCase name='ConfirmClickDirective Should not confirm when title is empty' duration='0'/>
+    </file>
+    <file path='src/app/shared/guards/schema-must-not-be-singleton.guard.spec.ts'>
+        <testCase name='SchemaMustNotBeSingletonGuard should return true when schemas has extension on extension page' duration='2'/>
+        <testCase name='SchemaMustNotBeSingletonGuard should redirect to extension if list url is not configured on extension page' duration='2'/>
+        <testCase name='SchemaMustNotBeSingletonGuard should redirect to extension if list url is configured' duration='3'/>
+        <testCase name='SchemaMustNotBeSingletonGuard should redirect to content if singleton on new page' duration='2'/>
+        <testCase name='SchemaMustNotBeSingletonGuard should redirect to content if singleton' duration='2'/>
+        <testCase name='SchemaMustNotBeSingletonGuard should subscribe to schema and return true if default' duration='2'/>
+    </file>
+    <file path='src/app/shared/state/assets.forms.spec.ts'>
+        <testCase name='AnnotateAssetForm shoulde remove extension if loading asset file name' duration='2'/>
+        <testCase name='AnnotateAssetForm should create slug from file name' duration='1'/>
+        <testCase name='AnnotateAssetForm should remove previous metadata if loaded' duration='1'/>
+        <testCase name='AnnotateAssetForm should create slug from file name and append extension' duration='1'/>
+        <testCase name='AnnotateAssetForm should convert values if submitting' duration='1'/>
+        <testCase name='AnnotateAssetForm should convert metadata if loading' duration='0'/>
+        <testCase name='AnnotateAssetForm should return null if nothing changed before submit' duration='1'/>
+    </file>
+    <file path='src/app/shared/services/app-languages.service.spec.ts'>
+        <testCase name='AppLanguagesService should make put request to make master language' duration='3'/>
+        <testCase name='AppLanguagesService should make delete request to remove language' duration='1'/>
+        <testCase name='AppLanguagesService should make get request to get app languages' duration='1'/>
+        <testCase name='AppLanguagesService should make post request to add language' duration='3'/>
+    </file>
+    <file path='src/app/framework/utils/markdown.spec.ts'>
+        <testCase name='Markdown should render text inline' duration='1'/>
+        <testCase name='Markdown should render escaped' duration='0'/>
+        <testCase name='Markdown should render non escaped' duration='0'/>
+        <testCase name='Markdown should render mailto link' duration='0'/>
+        <testCase name='Markdown should render text' duration='0'/>
+        <testCase name='Markdown should render normal link' duration='0'/>
+        <testCase name='Markdown should render image' duration='1'/>
+    </file>
+    <file path='src/app/features/teams/services/team-plans.service.spec.ts'>
+        <testCase name='TeamPlansService should make get request to get team plans' duration='2'/>
+        <testCase name='TeamPlansService should make put request to change plan' duration='2'/>
+    </file>
+    <file path='src/app/framework/services/title.service.spec.ts'>
+        <testCase name='TitleService should instantiate' duration='2'/>
+        <testCase name='TitleService should replace previous index if found' duration='1'/>
+        <testCase name='TitleService should use suffix if stack is empty and no suffix is set' duration='0'/>
+        <testCase name='TitleService should use suffix if stack is empty' duration='1'/>
+        <testCase name='TitleService should concatenate remainging parts if title elements are popped' duration='0'/>
+        <testCase name='TitleService should prepand prefix to title' duration='0'/>
+        <testCase name='TitleService should concatenate multiple parts if title elements are pushed' duration='1'/>
+        <testCase name='TitleService should replace previous index if found and not last' duration='1'/>
+        <testCase name='TitleService should use single part if title element is pushed' duration='1'/>
+        <testCase name='TitleService should append suffix to title' duration='1'/>
+    </file>
+    <file path='src/app/framework/angular/forms/focus-on-init.directive.spec.ts'>
+        <testCase name='FocusOnInitDirective should call select on element if init' duration='203'/>
+        <testCase name='FocusOnInitDirective should call focus on element if init' duration='202'/>
+    </file>
+    <file path='src/app/shared/services/users-provider.service.spec.ts'>
+        <testCase name='UsersProviderService should return provide user from cache' duration='1'/>
+        <testCase name='UsersProviderService should return users service if user not cached' duration='1'/>
+        <testCase name='UsersProviderService should return me if user is current user' duration='2'/>
+        <testCase name='UsersProviderService should return invalid user if not found' duration='2'/>
+    </file>
+    <file path='src/app/shared/guards/content-must-exist.guard.spec.ts'>
+        <testCase name='ContentMustExistGuard should load content and return true if found' duration='2'/>
+        <testCase name='ContentMustExistGuard should unset content if content id is &lt;new>' duration='4'/>
+        <testCase name='ContentMustExistGuard should load content and return false if not found' duration='2'/>
+        <testCase name='ContentMustExistGuard should unset content if content id is undefined' duration='2'/>
+    </file>
+    <file path='src/app/framework/angular/forms/error-formatting.spec.ts'>
+        <testCase name='formatErrors should format match' duration='0'/>
+        <testCase name='formatErrors should format uniqueStrings' duration='0'/>
+        <testCase name='formatErrors should format validArrayValues' duration='0'/>
+        <testCase name='formatErrors should format maxLength array' duration='1'/>
+        <testCase name='formatErrors should format minLength array' duration='0'/>
+        <testCase name='formatErrors should format validDateTime' duration='0'/>
+        <testCase name='formatErrors should format maxLength string' duration='0'/>
+        <testCase name='formatErrors should format minLength string' duration='1'/>
+        <testCase name='formatErrors should format betweenLength array range' duration='1'/>
+        <testCase name='formatErrors should format email' duration='1'/>
+        <testCase name='formatErrors should format betweenLength array exactly' duration='0'/>
+        <testCase name='formatErrors should format requiredTrue' duration='1'/>
+        <testCase name='formatErrors should format required' duration='0'/>
+        <testCase name='formatErrors should format betweenLength string range' duration='0'/>
+        <testCase name='formatErrors should format custom errors' duration='1'/>
+        <testCase name='formatErrors should format betweenLength string exactly' duration='0'/>
+        <testCase name='formatErrors should format max' duration='0'/>
+        <testCase name='formatErrors should format min' duration='0'/>
+        <testCase name='formatErrors should format between range' duration='0'/>
+        <testCase name='formatErrors should format validValues' duration='1'/>
+        <testCase name='formatErrors should format between exactly' duration='0'/>
+        <testCase name='formatErrors should format custom errors without dots' duration='0'/>
+        <testCase name='formatErrors should format match with message' duration='1'/>
+        <testCase name='formatErrors should format match' duration='0'/>
+        <testCase name='formatErrors should format custom' duration='0'/>
+    </file>
+    <file path='src/app/shared/guards/team-must-exist.guard.spec.ts'>
+        <testCase name='TeamMustExistGuard should navigate to 404 page if team is not found' duration='2'/>
+        <testCase name='TeamMustExistGuard should return true if team is found' duration='2'/>
+    </file>
+    <file path='src/app/shared/guards/schema-must-exist.guard.spec.ts'>
+        <testCase name='SchemaMustExistGuard should load schema and return false if not found' duration='2'/>
+        <testCase name='SchemaMustExistGuard should load schema and return true if found' duration='2'/>
+    </file>
+    <file path='src/app/shared/state/asset-uploader.state.spec.ts'>
+        <testCase name='AssetUploaderState should update status if uploading asset completes' duration='4'/>
+        <testCase name='AssetUploaderState should create initial state if uploading file' duration='1'/>
+        <testCase name='AssetUploaderState should update status if uploading file failed' duration='1'/>
+        <testCase name='AssetUploaderState should create initial state if uploading asset' duration='1'/>
+        <testCase name='AssetUploaderState should update progress if uploading file makes progress' duration='1'/>
+        <testCase name='AssetUploaderState should update status if uploading file completes' duration='1'/>
+        <testCase name='AssetUploaderState should update status if uploading asset failed' duration='1'/>
+        <testCase name='AssetUploaderState should update progress if uploading asset makes progress' duration='1'/>
+    </file>
+    <file path='src/app/features/teams/state/team-auth.state.spec.ts'>
+        <testCase name='TeamAuthState Loading should load auth' duration='1'/>
+        <testCase name='TeamAuthState Loading should show notification on load if reload is true' duration='1'/>
+        <testCase name='TeamAuthState Loading should reset loading state if loading failed' duration='1'/>
+        <testCase name='TeamAuthState Updates should update scheme with deleted scheme' duration='1'/>
+        <testCase name='TeamAuthState Updates should update scheme with new scheme' duration='1'/>
+    </file>
+    <file path='src/app/shared/services/usages.service.spec.ts'>
+        <testCase name='UsagesService should make get request to get storage usages for team' duration='5'/>
+        <testCase name='UsagesService should make get request to get storage usages' duration='2'/>
+        <testCase name='UsagesService should make get request to get calls usages for team' duration='2'/>
+        <testCase name='UsagesService should make get request to get calls usages' duration='2'/>
+        <testCase name='UsagesService should make get request to get log' duration='2'/>
+        <testCase name='UsagesService should make get request to get today storage for team' duration='2'/>
+        <testCase name='UsagesService should make get request to get today storage' duration='3'/>
+    </file>
+    <file path='src/app/framework/angular/http/http-extensions.spec.ts'>
+        <testCase name='ErrorParsing should just forward error dto' duration='1'/>
+        <testCase name='ErrorParsing should return default if object is invalid' duration='1'/>
+        <testCase name='ErrorParsing should return error from error object' duration='0'/>
+        <testCase name='ErrorParsing should return default if json is invalid' duration='1'/>
+        <testCase name='ErrorParsing should return default 412 error' duration='0'/>
+        <testCase name='ErrorParsing should return default if error is javascript exception' duration='1'/>
+        <testCase name='ErrorParsing should return error from error json' duration='0'/>
+        <testCase name='ErrorParsing should return default 429 error' duration='1'/>
+    </file>
+    <file path='src/app/shared/services/collaboration.service.spec.ts'>
+        <testCase name='CollaborationService should remove from map' duration='7'/>
+        <testCase name='CollaborationService should add to array' duration='3'/>
+        <testCase name='CollaborationService should provide one awareness per user' duration='5'/>
+        <testCase name='CollaborationService should replace in array' duration='3'/>
+        <testCase name='CollaborationService should remove from array' duration='1'/>
+        <testCase name='CollaborationService should add to map' duration='2'/>
+        <testCase name='CollaborationService should also get array if disconnected' duration='2'/>
+        <testCase name='CollaborationService should also get map if disconnected' duration='1'/>
+    </file>
+    <file path='src/app/shared/guards/app-must-exist.guard.spec.ts'>
+        <testCase name='AppMustExistGuard should return true if app is found' duration='3'/>
+        <testCase name='AppMustExistGuard should navigate to 404 page if app is not found' duration='2'/>
+    </file>
+    <file path='src/app/framework/angular/forms/extended-form-group.spec.ts'>
+        <testCase name='ExtendedFormGroup should provide value even if controls are disabled' duration='1'/>
+        <testCase name='UndefinableFormGroup should set value as &lt;undefined (on)>' duration='1'/>
+        <testCase name='UndefinableFormGroup should set value as &lt;defined (on)>' duration='0'/>
+        <testCase name='UndefinableFormGroup should initialize with empty array' duration='0'/>
+        <testCase name='UndefinableFormGroup should provide value even if controls are disabled' duration='0'/>
+        <testCase name='UndefinableFormGroup should patch value as &lt;defined (on)>' duration='1'/>
+        <testCase name='UndefinableFormGroup should patch value as &lt;defined (off)>' duration='0'/>
+        <testCase name='UndefinableFormGroup should initialize with undefined' duration='1'/>
+        <testCase name='UndefinableFormGroup should set value as &lt;defined (off)>' duration='0'/>
+        <testCase name='UndefinableFormGroup should reset value as &lt;defined (off)>' duration='1'/>
+        <testCase name='UndefinableFormGroup should reset value as &lt;defined (on)>' duration='1'/>
+        <testCase name='UndefinableFormGroup should patch value as &lt;undefined (on)>' duration='0'/>
+        <testCase name='UndefinableFormGroup should reset value as &lt;undefined (on)>' duration='0'/>
+    </file>
+    <file path='src/app/shared/state/indexes.state.spec.ts'>
+        <testCase name='IndexesState Updates should not remove index from snapshot' duration='2'/>
+        <testCase name='IndexesState Updates should not add index to snapshot' duration='1'/>
+        <testCase name='IndexesState Loading should show notification on load error if silent is false' duration='1'/>
+        <testCase name='IndexesState Loading should reset loading state if loading failed' duration='1'/>
+        <testCase name='IndexesState Loading should not show notification on load error if silent is true' duration='1'/>
+        <testCase name='IndexesState Loading should show notification on load if reload is true' duration='1'/>
+        <testCase name='IndexesState Loading should load indexes' duration='1'/>
+    </file>
+    <file path='src/app/framework/utils/array-extensions.spec.ts'>
+        <testCase name='ArrayExtensions should clear array' duration='0'/>
+        <testCase name='ArrayExtensions should sort by property with same value' duration='7'/>
+        <testCase name='ArrayExtensions should return false if array does not include item' duration='1'/>
+        <testCase name='ArrayExtensions should convert to map' duration='0'/>
+        <testCase name='ArrayExtensions removeBy should return same array without removed value' duration='1'/>
+        <testCase name='ArrayExtensions removeBy should return same array if value is not defined' duration='0'/>
+        <testCase name='ArrayExtensions removedBy should return new array without removed value' duration='0'/>
+        <testCase name='ArrayExtensions removedBy should return new array if value is not defined' duration='0'/>
+        <testCase name='ArrayExtensions replaceBy should return array with new value' duration='1'/>
+        <testCase name='ArrayExtensions replaceBy should return same array if value is not defined' duration='0'/>
+        <testCase name='ArrayExtensions should sort by property and create new value' duration='1'/>
+        <testCase name='ArrayExtensions replacedBy should return new array with new value' duration='1'/>
+        <testCase name='ArrayExtensions replacedBy should return same array if value is not defined' duration='7'/>
+        <testCase name='ArrayExtensions should sort by value' duration='0'/>
+        <testCase name='ArrayExtensions should return true if array include item' duration='0'/>
+        <testCase name='ArrayExtensions should returned defined only' duration='0'/>
+        <testCase name='ArrayExtensions remove should return same array without removed value' duration='0'/>
+        <testCase name='ArrayExtensions removed should return new array without removed value' duration='0'/>
+    </file>
+    <file path='src/app/features/administration/state/users.state.spec.ts'>
+        <testCase name='UsersState Selection should update selected user if reloaded' duration='1'/>
+        <testCase name='UsersState Selection should update selected user if updated' duration='1'/>
+        <testCase name='UsersState Selection should remove selected user from snapshot if deleted' duration='1'/>
+        <testCase name='UsersState Updates should update user if locked' duration='1'/>
+        <testCase name='UsersState Updates should update user if updated' duration='2'/>
+        <testCase name='UsersState Updates should update user if locked' duration='2'/>
+        <testCase name='UsersState Updates should remove user from snapshot if delete' duration='1'/>
+        <testCase name='UsersState Updates should return user on select and not load if already loaded' duration='1'/>
+        <testCase name='UsersState Updates should truncate users if page size reached' duration='2'/>
+        <testCase name='UsersState Updates should return null on select if user is not found' duration='2'/>
+        <testCase name='UsersState Updates should add user to snapshot if created' duration='1'/>
+        <testCase name='UsersState Updates should return user on select and load if not loaded' duration='1'/>
+        <testCase name='UsersState Updates should return null on select if unselecting user' duration='0'/>
+        <testCase name='UsersState Loading should reset loading state if loading failed' duration='0'/>
+        <testCase name='UsersState Loading should load with new pagination if paging' duration='1'/>
+        <testCase name='UsersState Loading should show notification on load if reload is true' duration='1'/>
+        <testCase name='UsersState Loading should load with query if searching' duration='0'/>
+        <testCase name='UsersState Loading should load users' duration='0'/>
+    </file>
+    <file path='src/app/framework/services/shortcut.service.spec.ts'>
+        <testCase name='ShortcutService should raise event if triggered' duration='1'/>
+        <testCase name='ShortcutService should not raise event if triggered but unsubscribed' duration='1'/>
+        <testCase name='ShortcutService should register multiple shortcuts' duration='0'/>
+        <testCase name='ShortcutService should transform shortcut' duration='0'/>
+    </file>
+    <file path='src/app/framework/services/clipboard.service.spec.ts'>
+        <testCase name='ShortcutService should instantiate' duration='0'/>
+        <testCase name='ShortcutService should raise subject if setting text' duration='0'/>
+        <testCase name='ShortcutService should get value from clipboard' duration='0'/>
+        <testCase name='ShortcutService should return empty string if clipboard is empty' duration='0'/>
+        <testCase name='ShortcutService should instantiate' duration='0'/>
+    </file>
+    <file path='src/app/framework/utils/duration.spec.ts'>
+        <testCase name='Duration should instantiate and provide timestamp as property' duration='0'/>
+        <testCase name='Duration should print to string correctly for one digit minutes' duration='1'/>
+        <testCase name='Duration should calculate timestamp from first and second time' duration='0'/>
+        <testCase name='Duration should print to string correctly' duration='0'/>
+        <testCase name='Duration should print to string correctly for partial seconds' duration='0'/>
+    </file>
+    <file path='src/app/framework/utils/modal-view.spec.ts'>
+        <testCase name='DialogModel should have default values' duration='1'/>
+        <testCase name='DialogModel should become open after show' duration='0'/>
+        <testCase name='DialogModel should become closed after toggle' duration='0'/>
+        <testCase name='DialogModel should become closed after hide' duration='0'/>
+        <testCase name='DialogModel should become open after toggle' duration='0'/>
+        <testCase name='DialogModel should not hide other dialog' duration='0'/>
+        <testCase name='ModalModel should become open after toggle' duration='0'/>
+        <testCase name='ModalModel should become open after show' duration='0'/>
+        <testCase name='ModalModel should have default values' duration='0'/>
+        <testCase name='ModalModel should hide other modal' duration='1'/>
+        <testCase name='ModalModel should become closed after toggle' duration='0'/>
+        <testCase name='ModalModel should become closed after hide' duration='0'/>
+    </file>
+    <file path='src/app/shared/services/stock-photo.service.spec.ts'>
+        <testCase name='StockPhotoService should make get request to get stock photos' duration='3'/>
+        <testCase name='StockPhotoService should return empty stock photos if get request fails' duration='2'/>
+    </file>
+    <file path='src/app/framework/utils/version.spec.ts'>
+        <testCase name='Version should ignore prefix for equal comparison' duration='0'/>
+        <testCase name='Version should initialize with init value' duration='1'/>
+    </file>
+    <file path='src/app/features/teams/services/team-contributors.service.spec.ts'>
+        <testCase name='TeamContributorsService should make get request to get team contributors' duration='3'/>
+        <testCase name='TeamContributorsService should make post request to assign contributor' duration='2'/>
+        <testCase name='TeamContributorsService should make delete request to remove contributor' duration='2'/>
+    </file>
+    <file path='src/app/framework/angular/pipes/markdown.pipe.spec.ts'>
+        <testCase name='MarkdownInlinePipe should return empty string for invalid value' duration='0'/>
+        <testCase name='MarkdownInlinePipe should return empty string for invalid value' duration='0'/>
+        <testCase name='MarkdownInlinePipe should return empty string for invalid value' duration='0'/>
+        <testCase name='MarkdownInlinePipe should escape input html' duration='0'/>
+        <testCase name='MarkdownInlinePipe should convert link to html' duration='1'/>
+        <testCase name='MarkdownInlinePipe should convert markdown to html' duration='0'/>
+        <testCase name='MarkdownPipe should return empty string for invalid value' duration='0'/>
+        <testCase name='MarkdownPipe should return empty string for invalid value' duration='0'/>
+        <testCase name='MarkdownPipe should convert markdown to html' duration='0'/>
+        <testCase name='MarkdownPipe should return empty string for invalid value' duration='0'/>
+        <testCase name='MarkdownPipe should escape input html' duration='0'/>
+        <testCase name='MarkdownPipe should convert link to html' duration='0'/>
+        <testCase name='MarkdownPipe should return empty string for invalid value' duration='1'/>
+        <testCase name='MarkdownPipe should return empty string for invalid value' duration='0'/>
+        <testCase name='MarkdownPipe should convert markdown to html' duration='0'/>
+        <testCase name='MarkdownPipe should return empty string for invalid value' duration='0'/>
+    </file>
+    <file path='src/app/shared/services/templates.service.spec.ts'>
+        <testCase name='TemplatesService should make get request to get template' duration='3'/>
+        <testCase name='TemplatesService should make get request to get templates' duration='2'/>
+    </file>
+    <file path='src/app/shared/state/rule-simulator.state.spec.ts'>
+        <testCase name='RuleSimulatorState should reset loading state if loading failed' duration='1'/>
+        <testCase name='RuleSimulatorState should not load simulated rule events if no rule selected' duration='1'/>
+        <testCase name='RuleSimulatorState should load simulated rule events' duration='1'/>
+        <testCase name='RuleSimulatorState should load simulated rule events by action and trigger' duration='1'/>
+    </file>
+    <file path='src/app/shared/components/help/help-markdown.pipe.spec.ts'>
+        <testCase name='MarkdownPipe should convert relative link to html' duration='0'/>
+        <testCase name='MarkdownPipe should convert absolute link to html' duration='0'/>
+    </file>
+    <file path='src/app/shared/state/clients.state.spec.ts'>
+        <testCase name='ClientsState Loading should load clients' duration='2'/>
+        <testCase name='ClientsState Loading should reset loading state if loading failed' duration='1'/>
+        <testCase name='ClientsState Loading should show notification on load if reload is true' duration='1'/>
+        <testCase name='ClientsState Updates should update clients if client added' duration='1'/>
+        <testCase name='ClientsState Updates should update clients if role updated' duration='2'/>
+        <testCase name='ClientsState Updates should update clients if name updated' duration='1'/>
+        <testCase name='ClientsState Updates should update clients if client revoked' duration='1'/>
+    </file>
+    <file path='src/app/shared/services/contributors.service.spec.ts'>
+        <testCase name='ContributorsService should make get request to get app contributors' duration='3'/>
+        <testCase name='ContributorsService should make post request to assign contributor' duration='9'/>
+        <testCase name='ContributorsService should make delete request to remove contributor' duration='3'/>
+    </file>
+    <file path='src/app/shared/services/search.service.spec.ts'>
+        <testCase name='SearchService should make get request to get search results' duration='2'/>
+    </file>
+    <file path='src/app/framework/angular/shortcut.directive.spec.ts'>
+        <testCase name='ShortcutDirective should not raise event if triggered but disabled' duration='1'/>
+        <testCase name='ShortcutDirective should not raise event if triggered but destroyed' duration='0'/>
+        <testCase name='ShortcutDirective should raise event if triggered' duration='1'/>
+        <testCase name='ShortcutDirective should destroy without keys' duration='1'/>
+        <testCase name='ShortcutDirective should raise event if function does not exist' duration='0'/>
+        <testCase name='ShortcutDirective should init without keys' duration='1'/>
+    </file>
+    <file path='src/app/shared/state/contributors.state.spec.ts'>
+        <testCase name='ContributorsState Loading should show notification on load if reload is true' duration='1'/>
+        <testCase name='ContributorsState Loading should show filtered contributors if searching' duration='2'/>
+        <testCase name='ContributorsState Loading should show with new pagination if paging' duration='1'/>
+        <testCase name='ContributorsState Loading should not load if already loaded' duration='1'/>
+        <testCase name='ContributorsState Loading should load contributors' duration='1'/>
+        <testCase name='ContributorsState Loading should only show current page of contributors' duration='1'/>
+        <testCase name='ContributorsState Loading should reset loading state if loading failed' duration='1'/>
+        <testCase name='ContributorsState Updates should update contributors if user assigned' duration='1'/>
+        <testCase name='ContributorsState Updates should update contributors if contribution revoked' duration='1'/>
+        <testCase name='ContributorsState Updates should return proper error if user to add does not exist' duration='2'/>
+        <testCase name='ContributorsState Updates should return original error if not a 404' duration='1'/>
+    </file>
+    <file path='src/app/shared/state/roles.state.spec.ts'>
+        <testCase name='RolesState Loading should show notification on load if reload is true' duration='1'/>
+        <testCase name='RolesState Loading should reset loading state if loading failed' duration='2'/>
+        <testCase name='RolesState Loading should load roles' duration='1'/>
+        <testCase name='RolesState Updates should update roles if role added' duration='2'/>
+        <testCase name='RolesState Updates should update roles if role deleted' duration='1'/>
+        <testCase name='RolesState Updates should update roles if role updated' duration='2'/>
+    </file>
+    <file path='src/app/framework/angular/pipes/translate.pipe.spec.ts'>
+        <testCase name='TranslatePipe should return empty string if no translate method found' duration='0'/>
+        <testCase name='TranslatePipe should invoke translate method from object' duration='1'/>
+        <testCase name='TranslatePipe should invoke localizer service with string' duration='1'/>
+    </file>
+    <file path='src/app/shared/state/languages.state.spec.ts'>
+        <testCase name='LanguagesState Loading should load languages' duration='3'/>
+        <testCase name='LanguagesState Loading should reset loading state if loading failed' duration='1'/>
+        <testCase name='LanguagesState Loading should show notification on load if reload is true' duration='1'/>
+        <testCase name='LanguagesState Updates should update languages if language added' duration='2'/>
+        <testCase name='LanguagesState Updates should update languages if language deleted' duration='9'/>
+        <testCase name='LanguagesState Updates should update languages if language updated' duration='3'/>
+    </file>
+    <file path='src/app/shared/services/clients.service.spec.ts'>
+        <testCase name='ClientsService should make form request to create token' duration='3'/>
+        <testCase name='ClientsService should make put request to rename client' duration='2'/>
+        <testCase name='ClientsService should make get request to get app clients' duration='2'/>
+        <testCase name='ClientsService should make post request to create client' duration='2'/>
+        <testCase name='ClientsService should make delete request to remove client' duration='2'/>
+    </file>
+    <file path='src/app/framework/utils/string-helper.spec.ts'>
+        <testCase name='StringHelper should return empty text if value is null or undefined' duration='0'/>
+        <testCase name='StringHelper should return fallback name if label is undefined or null' duration='0'/>
+        <testCase name='StringHelper should build query and ignore null and undefined' duration='1'/>
+        <testCase name='StringHelper should build query for multiple values' duration='1'/>
+        <testCase name='StringHelper should return label if value is valid' duration='0'/>
+        <testCase name='StringHelper should return trimmed label if value is valid' duration='0'/>
+        <testCase name='StringHelper should return fallback name if label is empty' duration='0'/>
+        <testCase name='StringHelper should return trimmed fallback name if label is undefined' duration='0'/>
+        <testCase name='StringHelper should build query with encoded values' duration='0'/>
+        <testCase name='StringHelper should return empty string if also fallback not found' duration='0'/>
+        <testCase name='StringHelper should append dot if not added' duration='0'/>
+        <testCase name='StringHelper should not append dot if already added' duration='0'/>
+        <testCase name='StringHelper should return hash for null value' duration='0'/>
+        <testCase name='StringHelper should build query for single value' duration='0'/>
+        <testCase name='StringHelper should build query for empty object' duration='1'/>
+        <testCase name='StringHelper should return hash for concrete values' duration='0'/>
+        <testCase name='StringHelper should return hash for empty value' duration='0'/>
+    </file>
+    <file path='src/app/shared/state/workflows.state.spec.ts'>
+        <testCase name='WorkflowsState Updates should update workflows if workflow added' duration='2'/>
+        <testCase name='WorkflowsState Updates should update workflows if workflow deleted' duration='3'/>
+        <testCase name='WorkflowsState Updates should update workflows if workflow updated' duration='2'/>
+        <testCase name='WorkflowsState Loading should show notification on load if reload is true' duration='1'/>
+        <testCase name='WorkflowsState Loading should reset loading state if loading failed' duration='0'/>
+        <testCase name='WorkflowsState Loading should load workflow' duration='1'/>
+    </file>
+    <file path='src/app/shared/state/plans.state.spec.ts'>
+        <testCase name='PlansState Updates should redirect if returning url' duration='1'/>
+        <testCase name='PlansState Updates should update plans if no returning url' duration='1'/>
+        <testCase name='PlansState Loading should show notification on load if reload is true' duration='1'/>
+        <testCase name='PlansState Loading should load plans with overriden id' duration='2'/>
+        <testCase name='PlansState Loading should reset loading state if loading failed' duration='1'/>
+        <testCase name='PlansState Loading should load plans' duration='1'/>
+    </file>
+    <file path='src/app/framework/angular/title.component.spec.ts'>
+        <testCase name='TitleComponent should set title in service' duration='1'/>
+        <testCase name='TitleComponent should replace title in title service' duration='1'/>
+        <testCase name='TitleComponent should remove title on destroy if set before' duration='1'/>
+        <testCase name='TitleComponent should not remove title on destroy if not set before' duration='1'/>
+    </file>
+    <file path='src/app/shared/state/comments.state.spec.ts'>
+        <testCase name='CommentsState should update annotations' duration='2'/>
+        <testCase name='CommentsState should unset annotations' duration='1'/>
+        <testCase name='CommentsState should update comment' duration='1'/>
+        <testCase name='CommentsState should get empty annotations' duration='1'/>
+        <testCase name='CommentsState should prune comments' duration='1'/>
+        <testCase name='CommentsState should not prune comments if max not reached' duration='1'/>
+        <testCase name='CommentsState should mark comments as read' duration='1'/>
+        <testCase name='CommentsState should get grouped comments' duration='2'/>
+        <testCase name='CommentsState should get total items' duration='1'/>
+        <testCase name='CommentsState should get unread items count' duration='1'/>
+        <testCase name='CommentsState should get annotations' duration='1'/>
+        <testCase name='CommentsState should add comment' duration='1'/>
+    </file>
+    <file path='src/app/framework/utils/date-time.spec.ts'>
+        <testCase name='DateTime should make valid greater equals comparisons' duration='0'/>
+        <testCase name='DateTime should add hours to date time' duration='1'/>
+        <testCase name='DateTime should create yesterday instance correctly' duration='0'/>
+        <testCase name='DateTime should add minutes to date time' duration='0'/>
+        <testCase name='DateTime should add milliseconds to date time' duration='0'/>
+        <testCase name='DateTime should print to formatted ISO string' duration='0'/>
+        <testCase name='DateTime should print to iso string with milliseconds' duration='1'/>
+        <testCase name='DateTime should print to formatted string' duration='0'/>
+        <testCase name='DateTime should add days to date time' duration='1'/>
+        <testCase name='DateTime should throw if date string to parse is null' duration='0'/>
+        <testCase name='DateTime should make valid equal comparisons' duration='1'/>
+        <testCase name='DateTime should calculate valid first of month' duration='0'/>
+        <testCase name='DateTime should print to iso string' duration='0'/>
+        <testCase name='DateTime should throw if date string to parse is invalid' duration='1'/>
+        <testCase name='DateTime should make valid less equals comparisons' duration='0'/>
+        <testCase name='DateTime should parse date from utc date' duration='0'/>
+        <testCase name='DateTime should add seconds to date time' duration='0'/>
+        <testCase name='DateTime should parse from iso string' duration='0'/>
+        <testCase name='DateTime should make valid not equal comparisons' duration='0'/>
+        <testCase name='DateTime should return null if date string to try parse is invalid' duration='0'/>
+        <testCase name='DateTime should calculate valid first of week' duration='0'/>
+        <testCase name='DateTime should print to iso utc date' duration='0'/>
+        <testCase name='DateTime should create tomorrow instance correctly' duration='0'/>
+        <testCase name='DateTime should make valid greater comparisons' duration='0'/>
+        <testCase name='DateTime should print to from now string' duration='0'/>
+        <testCase name='DateTime should create today and now instance correctly' duration='0'/>
+        <testCase name='DateTime should make valid less comparisons' duration='0'/>
+        <testCase name='DateTime should return null if date string to try parse is null' duration='0'/>
+        <testCase name='DateTime should add years to date time' duration='1'/>
+        <testCase name='DateTime should print to iso date' duration='0'/>
+        <testCase name='DateTime should add months to date time' duration='0'/>
+        <testCase name='DateTime for Italian locale should format to UTC string' duration='1'/>
+        <testCase name='DateTime for Italian locale should format to from now string' duration='1'/>
+        <testCase name='DateTime for Italian locale should format to string' duration='0'/>
+        <testCase name='DateTime for Dutch locale should format to from now string' duration='0'/>
+        <testCase name='DateTime for Dutch locale should format to UTC string' duration='1'/>
+        <testCase name='DateTime for Dutch locale should format to string' duration='1'/>
+    </file>
+    <file path='src/app/framework/services/dialog.service.spec.ts'>
+        <testCase name='DialogService should publish notification' duration='1'/>
+        <testCase name='DialogService should publish dialog request' duration='1'/>
+        <testCase name='DialogService should confirm dialog with true' duration='0'/>
+        <testCase name='DialogService should create error notification' duration='1'/>
+        <testCase name='DialogService should instantiate' duration='0'/>
+        <testCase name='DialogService should create info notification' duration='1'/>
+        <testCase name='DialogService should confirm dialog with false' duration='1'/>
+        <testCase name='DialogService should publish tooltip' duration='0'/>
+    </file>
+    <file path='src/app/shared/state/asset-scripts.state.spec.ts'>
+        <testCase name='AssetScriptsState Loading should load clients' duration='1'/>
+        <testCase name='AssetScriptsState Loading should show notification on load if reload is true' duration='1'/>
+        <testCase name='AssetScriptsState Loading should reset loading state if loading failed' duration='1'/>
+        <testCase name='AssetScriptsState Updates should update scripts if scripts updated' duration='1'/>
+    </file>
+    <file path='src/app/shared/guards/load-schemas.guard.spec.ts'>
+        <testCase name='LoadSchemasGuard should load schemas' duration='2'/>
+    </file>
+    <file path='src/app/framework/angular/pipes/name.pipe.spec.ts'>
+        <testCase name='DisplayNamePipe should return trimmed fallback name if label is undefined' duration='1'/>
+        <testCase name='DisplayNamePipe should return empty text if value is null or undefined' duration='0'/>
+        <testCase name='DisplayNamePipe should return empty string if also fallback not found' duration='1'/>
+        <testCase name='DisplayNamePipe should return fallback name if label is undefined' duration='0'/>
+        <testCase name='DisplayNamePipe should return fallback name if label is empty' duration='0'/>
+        <testCase name='DisplayNamePipe should return trimmed label if value is valid' duration='0'/>
+        <testCase name='DisplayNamePipe should return label if value is valid' duration='0'/>
+        <testCase name='DisplayNamePipe should return value from nested object' duration='0'/>
+    </file>
+    <file path='src/app/shared/state/jobs.state.spec.ts'>
+        <testCase name='JobsState Updates should not remove job from snapshot' duration='2'/>
+        <testCase name='JobsState Updates should not add job to snapshot' duration='1'/>
+        <testCase name='JobsState Loading should not show notification on load error if silent is true' duration='1'/>
+        <testCase name='JobsState Loading should show notification on load error if silent is false' duration='1'/>
+        <testCase name='JobsState Loading should load jobs' duration='1'/>
+        <testCase name='JobsState Loading should show notification on load if reload is true' duration='1'/>
+        <testCase name='JobsState Loading should reset loading state if loading failed' duration='0'/>
+    </file>
+    <file path='src/app/shared/services/schemas.service.spec.ts'>
+        <testCase name='SchemasService should make put request to show field' duration='4'/>
+        <testCase name='SchemasService should make put request to update preview urls' duration='4'/>
+        <testCase name='SchemasService should make put request to lock field' duration='5'/>
+        <testCase name='SchemasService should make put request to enable field' duration='6'/>
+        <testCase name='SchemasService should make put request to synchronize schema' duration='5'/>
+        <testCase name='SchemasService should make put request to update field rules' duration='3'/>
+        <testCase name='SchemasService should make post request to add field' duration='3'/>
+        <testCase name='SchemasService should make get request to get content scripts completions' duration='2'/>
+        <testCase name='SchemasService should make put request to hide field' duration='4'/>
+        <testCase name='SchemasService should make put request to update field' duration='5'/>
+        <testCase name='SchemasService should make delete request to delete field' duration='5'/>
+        <testCase name='SchemasService should make put request to update category' duration='5'/>
+        <testCase name='SchemasService should make put request to disable field' duration='5'/>
+        <testCase name='SchemasService should make put request to publish schema' duration='5'/>
+        <testCase name='SchemasService should make get request to get content trigger completions' duration='2'/>
+        <testCase name='SchemasService should make put request to update ui fields' duration='3'/>
+        <testCase name='SchemasService should make post request to create schema' duration='4'/>
+        <testCase name='SchemasService should make put request to update schema' duration='4'/>
+        <testCase name='SchemasService should make put request to unpublish schema' duration='5'/>
+        <testCase name='SchemasService should make put request to update schema scripts' duration='4'/>
+        <testCase name='SchemasService should make get request to get field rules completions' duration='3'/>
+        <testCase name='SchemasService should make put request to update field ordering' duration='3'/>
+        <testCase name='SchemasService should make get request to get preview urls completions' duration='1'/>
+        <testCase name='SchemasService should make delete request to delete schema' duration='2'/>
+        <testCase name='SchemasService should throw if creating invalid property type' duration='2'/>
+        <testCase name='SchemasService should make get request to get schemas' duration='4'/>
+        <testCase name='SchemasService should make get request to get schema' duration='3'/>
+    </file>
+    <file path='src/app/shared/guards/unset-team.guard.spec.ts'>
+        <testCase name='UnsetTeamGuard should unselect team' duration='2'/>
+    </file>
+    <file path='src/app/framework/angular/pipes/highlight.pipe.spec.ts'>
+        <testCase name='Hightlight should not highlight if no search passed' duration='1'/>
+        <testCase name='Hightlight should not highlight if no search passed' duration='1'/>
+        <testCase name='Hightlight should encode html if search specified' duration='0'/>
+        <testCase name='Hightlight should highlight with search string' duration='1'/>
+        <testCase name='Hightlight should highlight with search regex' duration='0'/>
+        <testCase name='Hightlight should encode html if no search specified' duration='1'/>
+        <testCase name='Hightlight should not highlight if no search passed' duration='0'/>
+    </file>
+    <file path='src/app/shared/services/languages.service.spec.ts'>
+        <testCase name='LanguageService should make get request to get languages' duration='2'/>
+    </file>
+    <file path='src/app/framework/services/toolbar.service.spec.ts'>
+        <testCase name='ToolbarService should remove all buttons' duration='1'/>
+        <testCase name='ToolbarService should not replace button in toolbar if nothing changed' duration='0'/>
+        <testCase name='ToolbarService should remove buttons by owner' duration='0'/>
+        <testCase name='ToolbarService should instantiate' duration='1'/>
+        <testCase name='ToolbarService should add button to toolbar' duration='1'/>
+        <testCase name='ToolbarService should replace button in toolbar' duration='0'/>
+    </file>
+    <file path='src/app/framework/angular/routers/can-deactivate.guard.spec.ts'>
+        <testCase name='CanDeactivateGuard should call component' duration='1'/>
+    </file>
+    <file path='src/app/framework/utils/date-helper.spec.ts'>
+        <testCase name='DateHelper should use default locale if not configured' duration='0'/>
+        <testCase name='DateHelper should use configured locale' duration='0'/>
+    </file>
+    <file path='src/app/shared/services/teams.service.spec.ts'>
+        <testCase name='TeamsService should make delete request to delete team' duration='2'/>
+        <testCase name='TeamsService should make get request to get auth' duration='3'/>
+        <testCase name='TeamsService should make put request to update team' duration='1'/>
+        <testCase name='TeamsService should make delete request to leave team' duration='1'/>
+        <testCase name='TeamsService should make put request to update auth' duration='2'/>
+        <testCase name='TeamsService should make get request to get teams' duration='2'/>
+        <testCase name='TeamsService should make get request to get team' duration='2'/>
+        <testCase name='TeamsService should make post request to create team' duration='1'/>
+    </file>
+    <file path='src/app/shared/state/rules.state.spec.ts'>
+        <testCase name='RulesState Updates should not update rule in snapshot if running' duration='2'/>
+        <testCase name='RulesState Updates should not update rule in snapshot if triggered' duration='1'/>
+        <testCase name='RulesState Updates should not update rule in snapshot if running from snapshots' duration='2'/>
+        <testCase name='RulesState Updates should update rule if updated' duration='2'/>
+        <testCase name='RulesState Updates should add rule to snapshot if created' duration='1'/>
+        <testCase name='RulesState Updates should return rule on select and not load if already loaded' duration='1'/>
+        <testCase name='RulesState Updates should return null on select if unselecting rule' duration='1'/>
+        <testCase name='RulesState Updates should invoke rule service if run is cancelled' duration='1'/>
+        <testCase name='RulesState Updates should remove rule from snapshot if deleted' duration='1'/>
+        <testCase name='RulesState Loading should load rules' duration='1'/>
+        <testCase name='RulesState Loading should reset loading state if loading failed' duration='0'/>
+        <testCase name='RulesState Loading should show notification on load if reload is true' duration='0'/>
+        <testCase name='RulesState Selection should update selected rule if updated' duration='1'/>
+        <testCase name='RulesState Selection should remove selected rule from snapshot if deleted' duration='2'/>
+        <testCase name='RulesState Selection should update selected rule if reloaded' duration='1'/>
+    </file>
+    <file path='src/app/shared/guards/load-languages.guard.spec.ts'>
+        <testCase name='LoadLanguagesGuard should load languages' duration='3'/>
+    </file>
+    <file path='src/app/framework/services/loading.service.spec.ts'>
+        <testCase name='LoadingService should not unset from loaded delayed' duration='404'/>
+        <testCase name='LoadingService should not unset from loaded delayed on navigation event' duration='408'/>
+        <testCase name='LoadingService should instantiate' duration='0'/>
+        <testCase name='LoadingService should set back to loaded after several completions' duration='401'/>
+        <testCase name='LoadingService should set to loaded' duration='1'/>
+        <testCase name='LoadingService should not unset from loaded immediately' duration='0'/>
+        <testCase name='LoadingService should set to loaded on navigation start' duration='0'/>
+    </file>
+    <file path='src/app/shared/interceptors/auth.interceptor.spec.ts'>
+        <testCase name='AuthInterceptor should append headers to request' duration='3'/>
+        <testCase name='AuthInterceptor should not append headers for no auth headers' duration='1'/>
+        <testCase name='AuthInterceptor should not logout for 405 status code' duration='2'/>
+        <testCase name='AuthInterceptor should not logout for 404 status code' duration='2'/>
+        <testCase name='AuthInterceptor should not append headers for other requests' duration='1'/>
+        <testCase name='AuthInterceptor should logout for 401 status code after retry' duration='2'/>
+        <testCase name='AuthInterceptor should redirect for 403 status code' duration='1'/>
+        <testCase name='AuthInterceptor should not logout for 500 status code' duration='1'/>
+    </file>
+    <file path='src/app/shared/guards/load-teams.guard.spec.ts'>
+        <testCase name='LoadTeamsGuard should load teams' duration='1'/>
+    </file>
+    <file path='src/app/framework/angular/routers/router-2-state.spec.ts'>
+        <testCase name='Router2State Implementation should unsubscribe from state' duration='1'/>
+        <testCase name='Router2State Implementation Should get values from route' duration='0'/>
+        <testCase name='Router2State Implementation Should sync from state' duration='0'/>
+        <testCase name='Router2State Implementation Should not sync from state again if nothing has changed' duration='1'/>
+        <testCase name='Router2State Paging should parse from state without page if zero' duration='0'/>
+        <testCase name='Router2State Paging should fix page number if invalid' duration='1'/>
+        <testCase name='Router2State Paging should get page and size from route' duration='0'/>
+        <testCase name='Router2State Paging should get page size from local store as fallback' duration='0'/>
+        <testCase name='Router2State Paging should parse from state' duration='1'/>
+        <testCase name='Router2State Paging should get page size from default as last fallback' duration='0'/>
+        <testCase name='Router2State Paging should get page size from default if local store is invalid' duration='0'/>
+        <testCase name='Router2State Strings should not get fallback from route if empty' duration='0'/>
+        <testCase name='Router2State Strings should get fallback from route if not found' duration='0'/>
+        <testCase name='Router2State Strings should get string from route' duration='0'/>
+        <testCase name='Router2State Strings should parse from state' duration='0'/>
+        <testCase name='Router2State Strings should parse from state as undefined if not a string' duration='0'/>
+        <testCase name='Router2State StringKeys should parse from state' duration='0'/>
+        <testCase name='Router2State StringKeys should get object from route' duration='0'/>
+        <testCase name='Router2State StringKeys should get object with empty keys from route' duration='0'/>
+        <testCase name='Router2State StringKeys should parse from state as undefined if empty' duration='0'/>
+        <testCase name='Router2State StringKeys should parse from state as undefined if not an object' duration='7'/>
+    </file>
+    <file path='src/app/shared/state/schemas.state.spec.ts'>
+        <testCase name='SchemasState Categories should be build from schemas and custom name with nested categories' duration='2'/>
+        <testCase name='SchemasState Categories should be build from schemas with defined categories' duration='0'/>
+        <testCase name='SchemasState Categories should be build from schemas and custom name' duration='0'/>
+        <testCase name='SchemasState Categories should be build from schemas with undefined categories' duration='1'/>
+        <testCase name='SchemasState Categories should be build from schemas with nested categories' duration='1'/>
+        <testCase name='SchemasState Categories should be build from schemas and filter' duration='0'/>
+        <testCase name='SchemasState Updates should add category' duration='1'/>
+        <testCase name='SchemasState Updates should update schema if schema published' duration='3'/>
+        <testCase name='SchemasState Updates should return schema on select and reload if already loaded' duration='1'/>
+        <testCase name='SchemasState Updates should return schema on select and reload always' duration='2'/>
+        <testCase name='SchemasState Updates should return null on select if unselecting schema' duration='1'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if fields sorted' duration='3'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if schema synced' duration='3'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if field locked' duration='1'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if field updated' duration='1'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if schema published' duration='2'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if field hidden' duration='1'/>
+        <testCase name='SchemasState Updates with selection should remove schema from snapshot if deleted' duration='1'/>
+        <testCase name='SchemasState Updates with selection should update schema with matching category' duration='3'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if field shown' duration='2'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if ui fields configured' duration='2'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if field enabled' duration='2'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if scripts configured' duration='2'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if preview urls configured' duration='2'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if schema updated' duration='2'/>
+        <testCase name='SchemasState Updates with selection should add schema to snapshot if created' duration='1'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if field added' duration='3'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if schema category changed' duration='3'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if nested fields sorted' duration='1'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if nested field added' duration='1'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if field removed' duration='2'/>
+        <testCase name='SchemasState Updates with selection should update schema and selected schema if field disabled' duration='1'/>
+        <testCase name='SchemasState Updates should remove category' duration='0'/>
+        <testCase name='SchemasState Updates should update schema if schema unpublished' duration='2'/>
+        <testCase name='SchemasState Updates should update schema if schema category changed' duration='2'/>
+        <testCase name='SchemasState Loading should not remove custom category if loading schemas' duration='1'/>
+        <testCase name='SchemasState Loading should reset loading state if loading failed' duration='0'/>
+        <testCase name='SchemasState Loading should show notification on load if reload is true' duration='1'/>
+        <testCase name='SchemasState Loading should load if not loaded yet' duration='1'/>
+        <testCase name='SchemasState Loading should not load if already loaded' duration='0'/>
+        <testCase name='SchemasState Loading should load schemas' duration='1'/>
+        <testCase name='SchemasState should be build from schemas with nested categories and filter' duration='1'/>
+    </file>
+    <file path='src/app/framework/angular/pipes/keys.pipe.spec.ts'>
+        <testCase name='KeysPipe should return keys' duration='0'/>
+    </file>
+    <file path='src/app/framework/utils/color-helper.spec.ts'>
+        <testCase name='ColorHelper should convert from hsv red2' duration='0'/>
+        <testCase name='ColorHelper should compute color from string' duration='0'/>
+        <testCase name='ColorHelper should convert from hsv red' duration='0'/>
+        <testCase name='ColorHelper should convert from hsv yellow' duration='0'/>
+        <testCase name='ColorHelper should convert from hsv pink' duration='0'/>
+        <testCase name='ColorHelper should convert from hsv cyan' duration='0'/>
+        <testCase name='ColorHelper should convert from hsv blue' duration='0'/>
+        <testCase name='ColorHelper should convert from hsv green' duration='0'/>
+    </file>
+    <file path='src/app/shared/services/schemas.spec.ts'>
+        <testCase name='FieldDto should return name as display name if label is null' duration='0'/>
+        <testCase name='FieldDto should return label as display name' duration='0'/>
+        <testCase name='FieldDto should return placeholder as display placeholder' duration='0'/>
+        <testCase name='FieldDto should return name as display name label is empty' duration='0'/>
+        <testCase name='FieldDto should return localizable if partitioning is language' duration='1'/>
+        <testCase name='FieldDto should return empty as display placeholder if placeholder is null' duration='0'/>
+        <testCase name='FieldDto should not return localizable if partitioning is invariant' duration='0'/>
+        <testCase name='SchemaDto should return first fields as list fields if no field is declared' duration='0'/>
+        <testCase name='SchemaDto should return first field as reference fields if no field is declared' duration='1'/>
+        <testCase name='SchemaDto should return noop field as reference field if list is empty' duration='0'/>
+        <testCase name='SchemaDto should return label as display name' duration='0'/>
+        <testCase name='SchemaDto should return name as display name label is empty' duration='0'/>
+        <testCase name='SchemaDto should return configured fields as references fields if fields are declared' duration='0'/>
+        <testCase name='SchemaDto should return name as display name if label is undefined' duration='1'/>
+        <testCase name='SchemaDto should return preset with empty content field as list fields if fields is empty' duration='0'/>
+        <testCase name='SchemaDto should return configured fields as list fields if fields are declared' duration='0'/>
+    </file>
+    <file path='src/app/shared/services/plans.service.spec.ts'>
+        <testCase name='PlansService should make get request to get app plans' duration='2'/>
+        <testCase name='PlansService should make put request to change plan' duration='2'/>
+    </file>
+    <file path='src/app/features/teams/state/team-plans.state.spec.ts'>
+        <testCase name='TeamPlansState Loading should load plans with overriden id' duration='1'/>
+        <testCase name='TeamPlansState Loading should reset loading state if loading failed' duration='0'/>
+        <testCase name='TeamPlansState Loading should show notification on load if reload is true' duration='1'/>
+        <testCase name='TeamPlansState Loading should load plans' duration='1'/>
+        <testCase name='TeamPlansState Updates should redirect if returning url' duration='1'/>
+        <testCase name='TeamPlansState Updates should update plans if no returning url' duration='1'/>
+    </file>
+    <file path='src/app/shared/state/assets.state.spec.ts'>
+        <testCase name='AssetsState Searching should load with tags if tags selected' duration='1'/>
+        <testCase name='AssetsState Searching should load with query if searching' duration='1'/>
+        <testCase name='AssetsState Searching should load with tags if tag toggled' duration='0'/>
+        <testCase name='AssetsState Searching should unset ref when searching' duration='1'/>
+        <testCase name='AssetsState Navigating should load with parent id' duration='1'/>
+        <testCase name='AssetsState Updates should remove asset folder from snapshot if deleted' duration='1'/>
+        <testCase name='AssetsState Updates should not do anything if moving asset folder to itself' duration='1'/>
+        <testCase name='AssetsState Updates should add asset folder if created' duration='1'/>
+        <testCase name='AssetsState Updates should move asset back to snapshot if moving via api failed' duration='1'/>
+        <testCase name='AssetsState Updates should add asset folder if path has changed' duration='2'/>
+        <testCase name='AssetsState Updates should replace asset in snapshot' duration='1'/>
+        <testCase name='AssetsState Updates should update asset folder if updated' duration='1'/>
+        <testCase name='AssetsState Updates should add asset to snapshot if moved to current folder' duration='2'/>
+        <testCase name='AssetsState Updates should not add asset to snapshot if parent id is not the same' duration='1'/>
+        <testCase name='AssetsState Updates should update asset if updated' duration='1'/>
+        <testCase name='AssetsState Updates should increment tags if asset added' duration='1'/>
+        <testCase name='AssetsState Updates should remove asset from snapshot if moved to other folder' duration='1'/>
+        <testCase name='AssetsState Updates should not replace asset in snapshot if it does not exist' duration='0'/>
+        <testCase name='AssetsState Updates should replace tags if renamed' duration='1'/>
+        <testCase name='AssetsState Updates should not add asset to snapshot if it already exist' duration='1'/>
+        <testCase name='AssetsState Updates should remove asset folder from snapshot if moved to other folder' duration='1'/>
+        <testCase name='AssetsState Updates should truncate assets if page size reached' duration='2'/>
+        <testCase name='AssetsState Updates should not do anything if moving asset folder to current parent' duration='1'/>
+        <testCase name='AssetsState Updates should move asset folder back to snapshot if moving via api failed' duration='1'/>
+        <testCase name='AssetsState Updates should not do anything if moving asset to same parent' duration='1'/>
+        <testCase name='AssetsState Updates should remove asset from snapshot if when referenced and not confirmed' duration='1'/>
+        <testCase name='AssetsState Updates should remove asset from snapshot if deleted' duration='1'/>
+        <testCase name='AssetsState Updates should add asset folder to snapshot if moved to current folder' duration='1'/>
+        <testCase name='AssetsState Updates should not remove asset if referenced and not confirmed' duration='1'/>
+        <testCase name='AssetsState Updates should add asset to snapshot' duration='1'/>
+        <testCase name='AssetsState Loading should load without tags if tag untoggled' duration='1'/>
+        <testCase name='AssetsState Loading should load without tags if tags reset' duration='1'/>
+        <testCase name='AssetsState Loading should skip page size if loaded before' duration='1'/>
+        <testCase name='AssetsState Loading should load with new pagination if paging' duration='1'/>
+        <testCase name='AssetsState Loading should load with total' duration='1'/>
+        <testCase name='AssetsState Loading should load assets' duration='0'/>
+        <testCase name='AssetsState Loading should show notification on load if reload is true' duration='0'/>
+    </file>
+    <file path='src/app/shared/state/template.state.spec.ts'>
+        <testCase name='TemplatesState Loading should load templates' duration='0'/>
+        <testCase name='TemplatesState Loading should reset loading state if loading failed' duration='1'/>
+        <testCase name='TemplatesState Loading should show notification on load if reload is true' duration='2'/>
+    </file>
+    <file path='src/app/shared/services/rules.service.spec.ts'>
+        <testCase name='RulesService should make post request to get simulated rule events with action and trigger' duration='2'/>
+        <testCase name='RulesService should make put request to enqueue rule event' duration='1'/>
+        <testCase name='RulesService should make delete request to cancel all rule events' duration='2'/>
+        <testCase name='RulesService should make get request to get actions' duration='1'/>
+        <testCase name='RulesService should make put request to run rule from snapshots' duration='1'/>
+        <testCase name='RulesService should make put request to run rule' duration='2'/>
+        <testCase name='RulesService should make put request to trigger rule' duration='2'/>
+        <testCase name='RulesService should make delete request to delete rule' duration='1'/>
+        <testCase name='RulesService should make get request to get simulated rule events' duration='1'/>
+        <testCase name='RulesService should make put request to update rule' duration='1'/>
+        <testCase name='RulesService should make get request to get completions' duration='1'/>
+        <testCase name='RulesService should make post request to create rule' duration='1'/>
+        <testCase name='RulesService should make get request to get app rules' duration='1'/>
+        <testCase name='RulesService should make delete request to cancel run rule' duration='1'/>
+        <testCase name='RulesService should make get request to get rule events' duration='2'/>
+    </file>
+    <file path='src/app/shared/state/rule-events.state.spec.ts'>
+        <testCase name='RuleEventsState should reset loading state if loading failed' duration='1'/>
+        <testCase name='RuleEventsState should load rule events' duration='1'/>
+        <testCase name='RuleEventsState should not load again if rule id has not changed' duration='1'/>
+        <testCase name='RuleEventsState should call service if enqueuing event' duration='1'/>
+        <testCase name='RuleEventsState should call service if cancelling event' duration='1'/>
+        <testCase name='RuleEventsState should load with rule id if filtered' duration='1'/>
+        <testCase name='RuleEventsState should call service if cancelling all events' duration='1'/>
+        <testCase name='RuleEventsState should show notification on load if reload is true' duration='0'/>
+        <testCase name='RuleEventsState should load with new pagination if paging' duration='0'/>
+    </file>
+    <file path='src/app/shared/services/jobs.service.spec.ts'>
+        <testCase name='JobsService should make get request to get jobs' duration='2'/>
+        <testCase name='JobsService should return null if get restore returns 404' duration='2'/>
+        <testCase name='JobsService should make get request to get restore' duration='2'/>
+        <testCase name='JobsService should throw error if get restore returns non 404' duration='2'/>
+        <testCase name='JobsService should make post request to start backup' duration='1'/>
+        <testCase name='JobsService should make post request to start restore' duration='2'/>
+        <testCase name='JobsService should make delete request to remove job' duration='1'/>
+    </file>
+    <file path='src/app/shared/guards/schema-must-exist-published.guard.spec.ts'>
+        <testCase name='SchemaMustExistPublishedGuard should load schema and return false if component' duration='1'/>
+        <testCase name='SchemaMustExistPublishedGuard should load schema and return false if not found' duration='2'/>
+        <testCase name='SchemaMustExistPublishedGuard should load schema and return false if not published' duration='2'/>
+        <testCase name='SchemaMustExistPublishedGuard should load schema and return true if published' duration='2'/>
+    </file>
+    <file path='src/app/features/administration/services/event-consumers.service.spec.ts'>
+        <testCase name='EventConsumersService should make put request to start event consumer' duration='3'/>
+        <testCase name='EventConsumersService should make get request to get event consumers' duration='2'/>
+        <testCase name='EventConsumersService should make put request to reset event consumer' duration='1'/>
+        <testCase name='EventConsumersService should make put request to stop event consumer' duration='2'/>
+    </file>
+    <file path='src/app/shared/state/teams.state.spec.ts'>
+        <testCase name='TeamsState should load teams' duration='1'/>
+        <testCase name='TeamsState should select team' duration='1'/>
+        <testCase name='TeamsState should return null on select if unselecting team' duration='1'/>
+        <testCase name='TeamsState should return new team if loaded' duration='1'/>
+        <testCase name='TeamsState should update team if updated' duration='1'/>
+        <testCase name='TeamsState should remove team from snapshot if left' duration='0'/>
+        <testCase name='TeamsState should remove team from snapshot if deleted' duration='0'/>
+        <testCase name='TeamsState Selection should update selected team if reloaded' duration='0'/>
+        <testCase name='TeamsState Selection should update selected team if updated' duration='1'/>
+        <testCase name='TeamsState should return null on select if team is not found' duration='0'/>
+        <testCase name='TeamsState should add team to snapshot if created' duration='1'/>
+    </file>
+    <file path='src/app/shared/services/news.service.spec.ts'>
+        <testCase name='NewsService should make get request to get features' duration='2'/>
+    </file>
+    <file path='src/app/shared/services/assets.service.spec.ts'>
+        <testCase name='AssetsService should make get request to get completions' duration='2'/>
+        <testCase name='AssetsService should make post request to get assets with query by parent' duration='2'/>
+        <testCase name='AssetsService should make delete request to delete asset item' duration='1'/>
+        <testCase name='AssetsService should make put request to update asset folder' duration='2'/>
+        <testCase name='AssetsService should make post request to get assets with query by name' duration='1'/>
+        <testCase name='AssetsService should make post request to get assets with query by tag' duration='2'/>
+        <testCase name='AssetsService should return proper error if replacing asset content failed with 413' duration='1'/>
+        <testCase name='AssetsService should make post request to get assets with query by ids' duration='1'/>
+        <testCase name='AssetsService should make post request to get assets with query by ref' duration='2'/>
+        <testCase name='AssetsService should make put request to annotate asset' duration='1'/>
+        <testCase name='AssetsService should make put request to move asset' duration='2'/>
+        <testCase name='AssetsService should make get request to get asset folders' duration='2'/>
+        <testCase name='AssetsService should make put request to move asset folder' duration='1'/>
+        <testCase name='AssetsService should make post with parent id to create asset' duration='1'/>
+        <testCase name='AssetsService should make put request to replace asset content' duration='1'/>
+        <testCase name='AssetsService should make post request to create asset' duration='2'/>
+        <testCase name='AssetsService should make post request to create asset folder' duration='2'/>
+        <testCase name='AssetsService should return proper error if upload failed with 413' duration='1'/>
+        <testCase name='AssetsService should make get request to get asset' duration='1'/>
+        <testCase name='AssetsService should make get request to get asset tags' duration='2'/>
+        <testCase name='AssetsService should make put request to rename asset tag' duration='2'/>
+        <testCase name='AssetsService should make post request to get assets with basic query' duration='1'/>
+        <testCase name='AssetsService should make post request to get assets with basic query without total' duration='3'/>
+    </file>
+    <file path='src/app/framework/services/message-bus.service.spec.ts'>
+        <testCase name='MessageBus should instantiate' duration='0'/>
+        <testCase name='MessageBus should publish events and subscribe' duration='0'/>
+    </file>
+    <file path='src/app/features/administration/guards/user-must-exist.guard.spec.ts'>
+        <testCase name='UserMustExistGuard should load user and return true if found' duration='1'/>
+        <testCase name='UserMustExistGuard should unset user if user id is &lt;new>' duration='1'/>
+        <testCase name='UserMustExistGuard should unset user if user id is undefined' duration='2'/>
+        <testCase name='UserMustExistGuard should load user and return false if not found' duration='3'/>
+    </file>
+    <file path='src/app/framework/utils/math-helper.spec.ts'>
+        <testCase name='MathHelper should calculate multiple of 10' duration='0'/>
+        <testCase name='MathHelper should calculate different crc32 for different input' duration='0'/>
+        <testCase name='MathHelper should calculate multiple of 2' duration='1'/>
+        <testCase name='MathHelper should create color from long string' duration='0'/>
+        <testCase name='MathHelper should create color from short string' duration='0'/>
+        <testCase name='MathHelper should convert to luminance' duration='1'/>
+        <testCase name='MathHelper should convert from hsv with blue' duration='0'/>
+        <testCase name='MathHelper should generate random color' duration='0'/>
+        <testCase name='MathHelper should create color from rgb string' duration='1'/>
+        <testCase name='MathHelper should convert from hsv with turkis' duration='0'/>
+        <testCase name='MathHelper should create color from rgba string' duration='0'/>
+        <testCase name='MathHelper should convert from hsv with yellow' duration='0'/>
+        <testCase name='MathHelper should convert from hsv with red' duration='0'/>
+        <testCase name='MathHelper should convert from hsv with pink' duration='0'/>
+        <testCase name='MathHelper should calculate different ids' duration='1'/>
+        <testCase name='MathHelper should convert from hsv with red' duration='0'/>
+        <testCase name='MathHelper should convert to rad' duration='0'/>
+        <testCase name='MathHelper should convert to degree' duration='0'/>
+        <testCase name='MathHelper should adjust invalid degrees' duration='0'/>
+        <testCase name='MathHelper should calculate simple sin' duration='0'/>
+        <testCase name='MathHelper should calculate same crc32 for same input' duration='0'/>
+        <testCase name='MathHelper should calculate simple cos' duration='6'/>
+    </file>
+    <file path='src/app/shared/components/pipes.spec.ts'>
+        <testCase name='ScriptNamePipe should return titlecase for schema name' duration='0'/>
+        <testCase name='ScriptNamePipe should return custom name for queryPre' duration='0'/>
+    </file>
+    <file path='src/app/framework/utils/types.spec.ts'>
+        <testCase name='Types should make Date check' duration='0'/>
+        <testCase name='Types should treat array of empty values as empty' duration='0'/>
+        <testCase name='Types should not treat false as empty' duration='0'/>
+        <testCase name='Types should not treat empty string as empty' duration='0'/>
+        <testCase name='Types should make number check' duration='0'/>
+        <testCase name='Types should treat object of empty values as empty' duration='0'/>
+        <testCase name='Types Should format false' duration='1'/>
+        <testCase name='Types should clone object' duration='0'/>
+        <testCase name='Types should not treat array with at least one non-empty value as empty' duration='0'/>
+        <testCase name='Types should make boolean check' duration='0'/>
+        <testCase name='Types should compare undefined' duration='0'/>
+        <testCase name='Types should compare null' duration='0'/>
+        <testCase name='Types should not treat array with at least one non-empty value as empty' duration='0'/>
+        <testCase name='Types should make number array check' duration='0'/>
+        <testCase name='Types should make function check' duration='0'/>
+        <testCase name='Types should compare empty string with {x}' duration='0'/>
+        <testCase name='Types Should format true' duration='0'/>
+        <testCase name='Types should make null check' duration='1'/>
+        <testCase name='Types should make array check' duration='0'/>
+        <testCase name='Types should compare objects' duration='0'/>
+        <testCase name='Types should not treat zero as empty' duration='0'/>
+        <testCase name='Types should make object check' duration='0'/>
+        <testCase name='Types should treat null as empty' duration='0'/>
+        <testCase name='Types should make type check' duration='0'/>
+        <testCase name='Types should make RegExp check' duration='1'/>
+        <testCase name='Types should compare nested objects' duration='0'/>
+        <testCase name='Types should treat undefined as empty' duration='0'/>
+        <testCase name='Types should clone array' duration='0'/>
+        <testCase name='Types should make undefined check' duration='1'/>
+        <testCase name='Types should compare empty string with {x}' duration='0'/>
+        <testCase name='Types should make string check' duration='0'/>
+        <testCase name='Types should compare empty string with {x}' duration='0'/>
+        <testCase name='Types should clone value' duration='0'/>
+        <testCase name='Types should merge deeply' duration='1'/>
+        <testCase name='Types should compare empty string with undefined' duration='0'/>
+        <testCase name='Types should compare arrays' duration='0'/>
+        <testCase name='Types should compare invalid' duration='0'/>
+        <testCase name='Types Should format object' duration='1'/>
+        <testCase name='Types should make string array check' duration='0'/>
+        <testCase name='Types should compare scalars' duration='0'/>
+        <testCase name='Types should clone object of array' duration='1'/>
+        <testCase name='Types should treat empty object as empty' duration='0'/>
+        <testCase name='Types should compare arrays' duration='0'/>
+        <testCase name='Types should treat array object as empty' duration='0'/>
+    </file>
+    <file path='src/app/shared/guards/must-be-not-authenticated.guard.spec.ts'>
+        <testCase name='MustBeNotAuthenticatedGuard should not redirect after logout' duration='2'/>
+        <testCase name='MustBeNotAuthenticatedGuard should login redirect and return false if redirect enabled' duration='2'/>
+        <testCase name='MustBeNotAuthenticatedGuard should navigate to app page if authenticated' duration='1'/>
+        <testCase name='MustBeNotAuthenticatedGuard should return true if not authenticated' duration='2'/>
+    </file>
+    <file path='src/app/shared/services/indexes.service.spec.ts'>
+        <testCase name='IndexesService should make post request to create index' duration='2'/>
+        <testCase name='IndexesService should make get request to get indexes' duration='2'/>
+        <testCase name='IndexesService should make delete request to remove index' duration='2'/>
+    </file>
+    <file path='src/app/framework/services/local-store.service.spec.ts'>
+        <testCase name='LocalStore should instantiate' duration='0'/>
+        <testCase name='LocalStore should remove item from local store' duration='1'/>
+        <testCase name='LocalStore should get int from local store' duration='0'/>
+        <testCase name='LocalStore should set and get from fallback value if local store failed' duration='1'/>
+        <testCase name='LocalStore should call local store for get function' duration='0'/>
+        <testCase name='LocalStore should call local store for set function' duration='0'/>
+        <testCase name='LocalStore should get boolean from local store' duration='0'/>
+    </file>
+    <file path='src/app/shared/services/users.service.spec.ts'>
+        <testCase name='UsersService should make get request to get resources' duration='1'/>
+        <testCase name='UsersService should make post request to update profile' duration='1'/>
+    </file>
+    <file path='src/app/shared/services/help.service.spec.ts'>
+        <testCase name='HelpService should make get request to get sdks' duration='1'/>
+        <testCase name='HelpService should return empty sdks if get request fails' duration='1'/>
+        <testCase name='HelpService should return empty sections if get request fails' duration='2'/>
+        <testCase name='HelpService should make get request to get help sections' duration='1'/>
+    </file>
+    <file path='src/app/shared/guards/rule-must-exist.guard.spec.ts'>
+        <testCase name='RuleMustExistGuard should load rule and return false if not found' duration='1'/>
+        <testCase name='RuleMustExistGuard should load rule and return true if found' duration='1'/>
+        <testCase name='RuleMustExistGuard should unset rule if rule id is undefined' duration='2'/>
+        <testCase name='RuleMustExistGuard should unset rule if rule id is &lt;new>' duration='1'/>
+    </file>
+    <file path='src/app/framework/utils/error.spec.ts'>
+        <testCase name='ErrorDto should append dot to message' duration='1'/>
+        <testCase name='ErrorDto should create simple message if no details are specified.' duration='0'/>
+        <testCase name='ErrorDto should append dot to detail' duration='0'/>
+        <testCase name='ErrorDto should create html list if detail has one item' duration='1'/>
+        <testCase name='ErrorDto should create simple message with error code' duration='0'/>
+        <testCase name='ErrorDto should create html list if error has more items.' duration='0'/>
+    </file>
+    <file path='src/app/framework/services/localizer.service.spec.ts'>
+        <testCase name='LocalizerService should return simple key' duration='0'/>
+        <testCase name='LocalizerService should return key if not found' duration='0'/>
+        <testCase name='LocalizerService should instantiate' duration='0'/>
+        <testCase name='LocalizerService should return text with multiple variables' duration='0'/>
+        <testCase name='LocalizerService should return text with lower variable' duration='0'/>
+        <testCase name='LocalizerService should return text with upper variable' duration='0'/>
+        <testCase name='LocalizerService should return simple key with prefix' duration='0'/>
+        <testCase name='LocalizerService should return text with variable' duration='0'/>
+        <testCase name='LocalizerService should return null if not found' duration='0'/>
+    </file>
+    <file path='src/app/shared/state/apps.state.spec.ts'>
+        <testCase name='AppsState should remove app from snapshot if left' duration='1'/>
+        <testCase name='AppsState should remove app from snapshot if archived' duration='1'/>
+        <testCase name='AppsState should return null on select if app is not found' duration='1'/>
+        <testCase name='AppsState should update app if image uploaded' duration='1'/>
+        <testCase name='AppsState should update app if image removed' duration='1'/>
+        <testCase name='AppsState should return new app if loaded' duration='1'/>
+        <testCase name='AppsState should select app' duration='1'/>
+        <testCase name='AppsState should load apps' duration='0'/>
+        <testCase name='AppsState should return null on select if unselecting app' duration='1'/>
+        <testCase name='AppsState should not load settings if no app selected' duration='1'/>
+        <testCase name='AppsState should reload settings if app selected' duration='1'/>
+        <testCase name='AppsState should add app to snapshot if created' duration='3'/>
+        <testCase name='AppsState Selection should remove selected app from snapshot if archived' duration='1'/>
+        <testCase name='AppsState Selection should update selected app settings if updated' duration='1'/>
+        <testCase name='AppsState Selection should update selected app if reloaded' duration='1'/>
+        <testCase name='AppsState Selection should update selected app if updated' duration='1'/>
+        <testCase name='AppsState should update app if updated' duration='1'/>
+    </file>
+</testExecutions>
